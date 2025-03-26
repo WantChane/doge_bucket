@@ -29,7 +29,6 @@
         }
     },
     "persist": "config",
-    "bin": "MAA.exe",
     "shortcuts": [
         [
             "MAA.exe",

@@ -6,7 +6,6 @@
     "version": "3.6.11",
     "url": "http://ci.huangyuhui.net/job/HMCL-stable/11/artifact/HMCL/build/libs/HMCL-3.6.11.exe#/hmcl.exe",
     "hash": "3210ab5e1cc0079c11e3b11c529256470e0fd3806873f8cb82e6a6b87438cfdc",
-    "bin": "hmcl.exe",
     "shortcuts": [
         [
             "hmcl.exe",
