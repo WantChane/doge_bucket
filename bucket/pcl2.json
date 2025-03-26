@@ -1,5 +1,5 @@
 {
-    "version": "2.8.13",
+    "version": "2.9.1",
     "description": "Plain Craft Launcher",
     "homepage": "https://github.com/Hex-Dragon/PCL2",
     "license": "Shareware",
@@ -9,7 +9,7 @@
         "Plain Craft Launcher 2.exe",
         [
             "Plain Craft Launcher 2.exe",
-            "pcl2"
+            "PCL2"
         ]
     ],
     "shortcuts": [
@@ -23,7 +23,7 @@
         ".minecraft"
     ],
     "checkver": {
-        "url": "https://github.com/Hex-Dragon/PCL2/releases/latest"
+        "github": "https://github.com/Hex-Dragon/PCL2"
     },
     "autoupdate": {
         "url": "https://raw.githubusercontent.com/Hex-Dragon/PCL2/refs/heads/main/%E6%9C%80%E6%96%B0%E6%AD%A3%E5%BC%8F%E7%89%88.zip"
