@@ -29,10 +29,11 @@
         }
     },
     "persist": "config",
-    "bin": [
+    "bin": "MAA.exe",
+    "shortcuts": [
         [
             "MAA.exe",
-            "maa-arknights"
+            "MAA"
         ]
     ],
     "license": "AGPL-3.0"
