@@ -18,5 +18,6 @@
     "checkver": "github",
     "autoupdate": {
         "url": "https://raw.githubusercontent.com/Hex-Dragon/PCL2/refs/heads/main/%E6%9C%80%E6%96%B0%E6%AD%A3%E5%BC%8F%E7%89%88.zip"
-    }
+    },
+    "notes": "该下载链接特殊, 请核实应用内版本"
 }
