@@ -8,12 +8,13 @@ scoop bucket add chane_bucket https://github.com/WantChane/chane_bucket.git
 
 ### Minecraft Launcher
 
-| Name                                           | Mark                                                                                     |
-| ---------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| [HMCL](https://github.com/huanghongxun/HMCL)   | [okibcn_ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/hmcl.json) |
-| [PCL2](https://github.com/Hex-Dragon/PCL2)     | 该链接不稳定                                                                             |
-| [BakaXL_Sloth](https://www.bakaxl.com)         | 3.X 正式版                                                                               |
-| [BakaXL_InsiderParrot](https://www.bakaxl.com) | 3.X 测试版                                                                               |
+| Name                                                            | Mark                                                                                     |
+| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [HMCL](https://github.com/huanghongxun/HMCL)                    | [okibcn_ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/hmcl.json) |
+| [PCL2](https://github.com/Hex-Dragon/PCL2)                      | 该链接不稳定                                                                             |
+| [BakaXL_Sloth](https://www.bakaxl.com)                          | 3.X 正式版                                                                               |
+| [BakaXL_InsiderParrot](https://www.bakaxl.com)                  | 3.X 测试版                                                                               |
+| [PrismLauncher](https://github.com/PrismLauncher/PrismLauncher) | [games](https://github.com/Calinou/scoop-games/blob/master/bucket/prismlauncher.json)    |
 
 ### MAA
 
