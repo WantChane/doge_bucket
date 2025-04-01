@@ -57,11 +57,10 @@
         }
     },
     "notes": [
-        "隐藏提示:",
-        "   在注册表项中添加 UiLauncherCEHint 字符串值，值设置为 False 即可",
-        "   或者执行:",
-        "   'reg import \"$dir\\hide-hint.reg\"'",
-        "   如果想要再次打开提示, 请执行:",
-        "   'reg import \"$dir\\show-hint.reg\"'"
+        "在注册表项中添加 UiLauncherCEHint 字符串值，值设置为 False 即可隐藏提示",
+        "或者执行:",
+        "'reg import \"$dir\\hide-hint.reg\"'",
+        "如果想要再次打开提示, 请执行:",
+        "'reg import \"$dir\\show-hint.reg\"'"
     ]
 }
