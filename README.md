@@ -26,7 +26,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 | Name                                      | Mark |
 | ----------------------------------------- | ---- |
-| [MCSL2](https://mcsl.com.cn/)             |      |
+| [MCSL2](https://v2.mcsl.com.cn/)             |      |
 | [MCSManager](https://www.mcsmanager.com/) |      |
 | [MSL](https://www.mslmc.cn/)              |      |
 
