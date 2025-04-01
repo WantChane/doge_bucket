@@ -25,7 +25,7 @@
     ],
     "post_install": [
         "'hide-hint.reg', 'show-hint.reg' , 'uninstall.reg' | ForEach-Object {",
-        "    $content = Get-Content \"$bucketsdir\\chane\\scripts\\PCL2-CE\\$_\"",
+        "    $content = Get-Content \"$bucketsdir\\doge\\scripts\\PCL2-CE\\$_\"",
         "    if ($global) {",
         "       $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
         "    }",

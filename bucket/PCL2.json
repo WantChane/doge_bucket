@@ -17,7 +17,7 @@
     ],
     "post_install": [
         "'uninstall.reg' | ForEach-Object {",
-        "    $content = Get-Content \"$bucketsdir\\chane\\scripts\\PCL2\\$_\"",
+        "    $content = Get-Content \"$bucketsdir\\doge\\scripts\\PCL2\\$_\"",
         "    if ($global) {",
         "       $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
         "    }",

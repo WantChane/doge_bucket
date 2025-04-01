@@ -1,7 +1,7 @@
 # Chane Bucket
 
 ```powershell
-scoop bucket add chane_bucket https://github.com/WantChane/chane_bucket.git
+scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 ```
 
 ## 收录清单
