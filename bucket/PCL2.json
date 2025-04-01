@@ -15,6 +15,16 @@
         "PCL",
         ".minecraft"
     ],
+    "post_install": [
+        "'uninstall.reg' | ForEach-Object {",
+        "    $content = Get-Content \"$bucketsdir\\chane\\scripts\\PCL2\\$_\"",
+        "    if ($global) {",
+        "       $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+        "    }",
+        "    Set-Content \"$dir\\$_\" $content -Encoding Ascii",
+        "}"
+    ],
+    "pre_uninstall": "reg import \"$dir\\uninstall.reg\"",
     "checkver": "github",
     "autoupdate": {
         "url": "https://raw.githubusercontent.com/Hex-Dragon/PCL2/refs/heads/main/%E6%9C%80%E6%96%B0%E6%AD%A3%E5%BC%8F%E7%89%88.zip"
