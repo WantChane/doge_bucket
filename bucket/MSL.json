@@ -5,9 +5,7 @@
     "license": "GPL-3.0-only",
     "url": "https://github.com/MSLTeam/MSL/releases/download/v3.6.6.6/MSL.exe",
     "hash": "b1e63238607622458f6a63b601e151e86db3370a6c70de316b2fb60ef4f5cfe4",
-    "persist": [
-        "MSL"
-    ],
+    "persist": "MSL",
     "shortcuts": [
         [
             "MSL.exe",
