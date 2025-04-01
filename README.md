@@ -10,7 +10,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 | Name                                      | Mark                                                                                  |
 | ----------------------------------------- | ------------------------------------------------------------------------------------- |
-| [MaaAssistantArknights](https://maa.plus) | [cel-ti_maa-bucket](https://github.com/cel-ti/maa-bucket/blob/master/bucket/maa.json) |
+| [MaaAssistantArknights](https://maa.plus) | [cel-ti/maa-bucket](https://github.com/cel-ti/maa-bucket/blob/master/bucket/maa.json) |
 
 ### Minecraft Launcher
 
@@ -18,7 +18,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | [BakaXL_InsiderParrot](https://www.bakaxl.com)          | 3.X 测试版                                                                               |
 | [BakaXL_Sloth](https://www.bakaxl.com)                  | 3.X 正式版                                                                               |
-| [HMCL](https://github.com/huanghongxun/HMCL)            | [okibcn_ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/hmcl.json) |
+| [HMCL](https://github.com/huanghongxun/HMCL)            | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/hmcl.json) |
 | [PCL2](https://github.com/Hex-Dragon/PCL2)              | 该链接不稳定                                                                             |
 | [PCL2-CE](https://pcl-community.github.io/PCL2-CE-Web/) |                                                                                          |
 
