@@ -24,10 +24,13 @@
         "    Set-Content \"$dir\\$_\" $content -Encoding Ascii",
         "}"
     ],
-    "pre_uninstall": "reg import \"$dir\\uninstall.reg\"",
     "checkver": "github",
     "autoupdate": {
         "url": "https://raw.githubusercontent.com/Hex-Dragon/PCL2/refs/heads/main/%E6%9C%80%E6%96%B0%E6%AD%A3%E5%BC%8F%E7%89%88.zip"
     },
-    "notes": "该下载链接特殊, 请核实应用内版本"
+    "notes": [
+        "⚠ 该下载链接特殊, 请核实应用内版本",
+        "包括登录认证等信息储存在注册表`HKEY_CURRENT_USER\\Software\\PCL`中,如果你想彻底卸载PCL2,请执行:",
+        "'reg import \"$bucketsdir\\doge\\scripts\\PCL2\\uninstall.reg\"'"
+    ]
 }
