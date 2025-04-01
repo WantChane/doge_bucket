@@ -1,0 +1,65 @@
+{
+    "version": "2.10.5",
+    "description": "PCL2 社区版，可体验上游暂未合并的功能",
+    "homepage": "https://pcl-community.github.io/PCL2-CE-Web/",
+    "license": "https://github.com/PCL-Community/PCL2-CE/blob/dev/LICENCE",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/2.10.5/PCL2_CE_x64.exe",
+            "hash": "5039e7464550221b1960f9967291a761d5c2b09e7b4454f0f9341c89ee2b1a32"
+        },
+        "arm64": {
+            "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/2.10.5/PCL2_CE_ARM64.exe",
+            "hash": "b60ba556f69e85e11c24ca3f0957ab4057c7724d13e6d00482c0c7683cd92b74"
+        }
+    },
+    "persist": [
+        "PCL",
+        ".minecraft"
+    ],
+    "shortcuts": [
+        [
+            "PCL2_CE.exe",
+            "PCL2_CE"
+        ]
+    ],
+    "post_install": [
+        "'hide-hint.reg', 'show-hint.reg' , 'uninstall.reg' | ForEach-Object {",
+        "    $content = Get-Content \"$bucketsdir\\chane\\scripts\\PCL2-CE\\$_\"",
+        "    if ($global) {",
+        "       $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+        "    }",
+        "    Set-Content \"$dir\\$_\" $content -Encoding Ascii",
+        "}"
+    ],
+    "installer": {
+        "script": [
+            "if ($architecture -eq '64bit')",
+            "{",
+            "   Rename-Item \"$dir\\PCL2_CE_x64.exe\" 'PCL2_CE.exe' -ErrorAction SilentlyContinue ",
+            "} else {",
+            "   Rename-Item \"$dir\\PCL2_CE_ARM64.exe\" 'PCL2_CE.exe' -ErrorAction SilentlyContinue ",
+            "}"
+        ]
+    },
+    "pre_uninstall": "reg import \"$dir\\uninstall.reg\"",
+    "checkver": {
+        "github": "https://github.com/PCL-Community/PCL2-CE"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/$version/PCL2_CE_x64.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/$version/PCL2_CE_ARM64.exe"
+            }
+        }
+    },
+    "notes": [
+        "隐藏提示",
+        "在注册表项中添加 UiLauncherCEHint 字符串值，值设置为 False 即可",
+        "或者执行:",
+        "'reg import \"$dir\\hide-hint.reg\"'"
+    ]
+}
