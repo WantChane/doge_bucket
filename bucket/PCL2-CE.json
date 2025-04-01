@@ -61,7 +61,7 @@
         "'reg import \"$dir\\hide-hint.reg\"'",
         "如果想要再次打开提示, 请执行:",
         "'reg import \"$dir\\show-hint.reg\"'",
-        "包括登录认证等信息储存在注册表`HKEY_CURRENT_USER\\Software\\PCLCE`中,如果你想彻底卸载PCL2-CE,请执行:",
-        "'reg import \"$bucketsdir\\doge\\scripts\\PCL2-CE\\uninstall.reg\"'"
+        "包括登录认证等信息储存在注册表`HKEY_CURRENT_USER\\Software\\PCLCE`中,如果你想彻底卸载PCL2-CE,请在卸载前执行:",
+        "'reg import \"$dir\\uninstall.reg\"'"
     ]
 }
