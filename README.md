@@ -1,4 +1,4 @@
-# Chane Bucket
+# Doge Bucket
 
 ```powershell
 scoop bucket add doge https://github.com/WantChane/doge_bucket.git
