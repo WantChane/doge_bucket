@@ -30,7 +30,7 @@
     },
     "notes": [
         "⚠ 该下载链接特殊, 请核实应用内版本",
-        "包括登录认证等信息储存在注册表`HKEY_CURRENT_USER\\Software\\PCL`中,如果你想彻底卸载PCL2,请执行:",
-        "'reg import \"$bucketsdir\\doge\\scripts\\PCL2\\uninstall.reg\"'"
+        "包括登录认证等信息储存在注册表`HKEY_CURRENT_USER\\Software\\PCL`中,如果你想彻底卸载PCL2,请在卸载前执行:",
+        "'reg import \"$dir\\uninstall.reg\"'"
     ]
 }
