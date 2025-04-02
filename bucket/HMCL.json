@@ -24,6 +24,33 @@
         "hmcl.json",
         ".minecraft"
     ],
+    "installer": {
+        "script": [
+            "$links = @(",
+            "    @{ source = \"$persist_dir\\HMCL\\.minecraft\"; target = \"$env:APPDATA\\.minecraft\" },",
+            "    @{ source = \"$persist_dir\\HMCL\\.hmcl\"; target = \"$env:APPDATA\\.hmcl\" }",
+            ")",
+            "foreach ($link in $links) {",
+            "    New-Item -ItemType Directory -Force -Path $($link.source) | Out-Null",
+            "    if (Test-Path $($link.target)) {",
+            "        $linkType = (Get-Item -Path $($link.target) -ErrorAction SilentlyContinue).LinkType",
+            "        if ($linkType -eq 'Junction') {",
+            "            Remove-Item -Path $($link.target) -Force",
+            "        } else {",
+            "            Get-ChildItem -Path $($link.target) -Force | Move-Item -Destination $($link.source) -Force",
+            "            Remove-Item -Path $($link.target) -Force -Recurse",
+            "        }",
+            "    }",
+            "    New-Item -Path $($link.target) -ItemType Junction -Value $($link.source) -Force | Out-Null",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Remove-Item \"$env:APPDATA\\.minecraft\" -Recurse -Force -ErrorAction SilentlyContinue",
+            "Remove-Item \"$env:APPDATA\\.hmcl\" -Recurse -Force -ErrorAction SilentlyContinue"
+        ]
+    },
     "checkver": {
         "url": "https://hmcl.huangyuhui.net/api/update_link?channel=stable&download_link=true",
         "jsonpath": "$.version"
