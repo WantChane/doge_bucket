@@ -15,22 +15,34 @@
         "PCL",
         ".minecraft"
     ],
+    "pre_install": [
+        "$reg_data = \"$persist_dir\\PCL2.reg\"",
+        "if (Test-Path -Path $reg_data) {",
+        "   reg.exe import \"$reg_data\" | Out-Null",
+        "}"
+    ],
     "post_install": [
         "'uninstall.reg' | ForEach-Object {",
         "    $content = Get-Content \"$bucketsdir\\doge\\scripts\\PCL2\\$_\"",
-        "    if ($global) {",
-        "       $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
-        "    }",
         "    Set-Content \"$dir\\$_\" $content -Encoding Ascii",
         "}"
     ],
+    "uninstaller": {
+        "script": [
+            "$reg_path = \"HKEY_CURRENT_USER\\Software\\PCL\"",
+            "$reg_data = \"$persist_dir\\PCL2.reg\"",
+            "reg.exe query \"$reg_path\" | Out-Null",
+            "if ($LASTEXITCODE -eq 0) {",
+            "    reg.exe export \"$reg_path\" \"$reg_data\" /y | Out-Null",
+            "}",
+            "reg.exe import \"$dir\\uninstall.reg\" | Out-Null"
+        ]
+    },
     "checkver": "github",
     "autoupdate": {
         "url": "https://raw.githubusercontent.com/Hex-Dragon/PCL2/refs/heads/main/%E6%9C%80%E6%96%B0%E6%AD%A3%E5%BC%8F%E7%89%88.zip"
     },
     "notes": [
-        "⚠ 该下载链接特殊, 请核实应用内版本",
-        "包括登录认证等信息储存在注册表`HKEY_CURRENT_USER\\Software\\PCL`中,如果你想彻底卸载PCL2,请在卸载前执行:",
-        "'reg import \"$dir\\uninstall.reg\"'"
+        "⚠ 该下载链接特殊, 请核实应用内版本"
     ]
 }
