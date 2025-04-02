@@ -1,5 +1,10 @@
 # Doge Bucket
 
+## ⚠️注意事项⚠️
+
+1. 该仓库部分软件安装步骤中含有注册表操作, 例如 PCL2
+2. 该仓库部分软件安装步骤中需要访问 Scoop 安装目录下 buckets\doge 文件夹, 因此不建议修改下面命令中的仓库名
+
 ```powershell
 scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 ```
