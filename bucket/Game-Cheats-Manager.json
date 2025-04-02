@@ -1,0 +1,25 @@
+{
+    "version": "2.2.1",
+    "description": "Easily download and manage game cheats for your convenience",
+    "homepage": "https://github.com/dyang886/Game-Cheats-Manager",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/dyang886/Game-Cheats-Manager/releases/download/v2.2.1/Game.Cheats.Manager.Setup.2.2.1.exe",
+    "hash": "445585f6ab2da56309f3034880fd736bfc7464263d06481ae82e413b426bfd6d",
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "Game Cheats Manager.exe",
+            "Game Cheats Manager"
+        ]
+    ],
+    "persist": [
+        "GCM Trainers"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/dyang886/Game-Cheats-Manager/releases/download/v$version/Game.Cheats.Manager.Setup.$version.exe"
+    },
+    "notes": [
+        "'$dir\\GCM Trainers'已被scoop管理,请手动设置修改器下载路径"
+    ]
+}

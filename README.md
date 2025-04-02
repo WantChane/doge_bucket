@@ -26,9 +26,16 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 | Name                                      | Mark |
 | ----------------------------------------- | ---- |
-| [MCSL2](https://v2.mcsl.com.cn/)             |      |
+| [MCSL2](https://v2.mcsl.com.cn/)          |      |
 | [MCSManager](https://www.mcsmanager.com/) |      |
 | [MSL](https://www.mslmc.cn/)              |      |
+
+### Tools
+
+| Name                                                                   | Mark                                                                                                |
+| ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager) |                                                                                                     |
+| [RegistryFinder](https://registry-finder.com/)                         | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json) |
 
 ## 命名规范
 
