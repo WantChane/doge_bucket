@@ -12,33 +12,35 @@
             "Game Cheats Manager"
         ]
     ],
-    "persist": [
-        "GCM Trainers"
-    ],
     "installer": {
         "script": [
-            "New-Item -ItemType Directory -Force -Path \"$persist_dir\\GCM Settings\" | Out-Null",
-            "$targetPath = \"$env:APPDATA\\GCM Settings\"",
-            "if (Test-Path $targetPath) {",
-            "    $linkType = (Get-Item -Path $targetPath -ErrorAction SilentlyContinue).LinkType",
-            "    if ($linkType -eq 'Junction') {",
-            "        Remove-Item -Path $targetPath -Force",
-            "    } else {",
-            "        Get-ChildItem -Path $targetPath -Force | Move-Item -Destination \"$persist_dir\\GCM Settings\" -Force",
-            "        Remove-Item -Path $targetPath -Force -Recurse",
+            "$links = @(",
+            "    @{ source = \"$persist_dir\\GCM Trainers\"; target = \"$env:APPDATA\\GCM Trainers\" },",
+            "    @{ source = \"$persist_dir\\GCM Settings\"; target = \"$env:APPDATA\\GCM Settings\" }",
+            ")",
+            "foreach ($link in $links) {",
+            "    New-Item -ItemType Directory -Force -Path $($link.source) | Out-Null",
+            "    if (Test-Path $($link.target)) {",
+            "        $linkType = (Get-Item -Path $($link.target) -ErrorAction SilentlyContinue).LinkType",
+            "        if ($linkType -eq 'Junction') {",
+            "            Remove-Item -Path $($link.target) -Force",
+            "        } else {",
+            "            Get-ChildItem -Path $($link.target) -Force | Move-Item -Destination $($link.source) -Force",
+            "            Remove-Item -Path $($link.target) -Force -Recurse",
+            "        }",
             "    }",
-            "}",
-            "New-Item -Path \"$env:APPDATA\\GCM Settings\" -ItemType Junction -Value \"$persist_dir\\GCM Settings\" -Force | Out-Null"
+            "    New-Item -Path $($link.target) -ItemType Junction -Value $($link.source) -Force | Out-Null",
+            "}"
         ]
     },
     "uninstaller": {
-        "script": "Remove-Item \"$env:APPDATA\\GCM Settings\" -Recurse -Force -ErrorAction 'SilentlyContinue'"
+        "script": [
+            "Remove-Item \"$env:APPDATA\\GCM Settings\" -Recurse -Force -ErrorAction SilentlyContinue",
+            "Remove-Item \"$env:APPDATA\\GCM Trainers\" -Recurse -Force -ErrorAction SilentlyContinue"
+        ]
     },
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/dyang886/Game-Cheats-Manager/releases/download/v$version/Game.Cheats.Manager.Setup.$version.exe"
-    },
-    "notes": [
-        "'$dir\\GCM Trainers'已被scoop管理,请手动设置修改器下载路径"
-    ]
+    }
 }
