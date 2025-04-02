@@ -15,6 +15,25 @@
     "persist": [
         "GCM Trainers"
     ],
+    "installer": {
+        "script": [
+            "New-Item -ItemType Directory -Force -Path \"$persist_dir\\GCM Settings\" | Out-Null",
+            "$targetPath = \"$env:APPDATA\\GCM Settings\"",
+            "if (Test-Path $targetPath) {",
+            "    $linkType = (Get-Item -Path $targetPath -ErrorAction SilentlyContinue).LinkType",
+            "    if ($linkType -eq 'Junction') {",
+            "        Remove-Item -Path $targetPath -Force",
+            "    } else {",
+            "        Get-ChildItem -Path $targetPath -Force | Move-Item -Destination \"$persist_dir\\GCM Settings\" -Force",
+            "        Remove-Item -Path $targetPath -Force -Recurse",
+            "    }",
+            "}",
+            "New-Item -Path \"$env:APPDATA\\GCM Settings\" -ItemType Junction -Value \"$persist_dir\\GCM Settings\" -Force | Out-Null"
+        ]
+    },
+    "uninstaller": {
+        "script": "Remove-Item \"$env:APPDATA\\GCM Settings\" -Recurse -Force -ErrorAction 'SilentlyContinue'"
+    },
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/dyang886/Game-Cheats-Manager/releases/download/v$version/Game.Cheats.Manager.Setup.$version.exe"
