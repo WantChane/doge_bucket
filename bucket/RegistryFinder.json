@@ -1,7 +1,7 @@
 {
     "##": "基于https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json",
     "version": "2.59.0.0",
-    "description": "Registry Finder is an improved replacement for the built-in Windows registry editor",
+    "description": "Registry Finder是内置Windows注册表编辑器的改进替代品。",
     "license": "https://registry-finder.com/License.txt",
     "homepage": "https://registry-finder.com/",
     "architecture": {
