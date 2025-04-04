@@ -12,7 +12,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 ## 收录清单
 
-### 聊天通讯
+### Chat
 
 | Name                       | Mark                                                                                        |
 | -------------------------- | ------------------------------------------------------------------------------------------- |
@@ -42,12 +42,19 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | [MCSManager](https://www.mcsmanager.com/) |      |
 | [MSL](https://www.mslmc.cn/)              |      |
 
+### Music
+
+| Name                                                 | Mark                                                                                      |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| [listen1_desktop](http://listen1.github.io/listen1/) | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/listen1desktop.json) |
+
 ### Tools
 
 | Name                                                                   | Mark                                                                                                |
 | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | [Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager) |                                                                                                     |
 | [RegistryFinder](https://registry-finder.com/)                         | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json) |
+| [SwitchHosts](https://switchhosts.vercel.app/zh)                       | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/switchhosts.json)              |
 | [zoxide](https://github.com/ajeetdsouza/zoxide)                        | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/zoxide.json)                       |
 
 ## 命名规范
