@@ -48,6 +48,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | [Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager) |                                                                                                     |
 | [RegistryFinder](https://registry-finder.com/)                         | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json) |
+| [zoxide](https://github.com/ajeetdsouza/zoxide)                        | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/zoxide.json)                       |
 
 ## 命名规范
 
