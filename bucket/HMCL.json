@@ -27,7 +27,6 @@
     "installer": {
         "script": [
             "$links = @(",
-            "    @{ source = \"$persist_dir\\HMCL\\.minecraft\"; target = \"$env:APPDATA\\.minecraft\" },",
             "    @{ source = \"$persist_dir\\HMCL\\.hmcl\"; target = \"$env:APPDATA\\.hmcl\" }",
             ")",
             "foreach ($link in $links) {",
@@ -47,7 +46,6 @@
     },
     "uninstaller": {
         "script": [
-            "Remove-Item \"$env:APPDATA\\.minecraft\" -Recurse -Force -ErrorAction SilentlyContinue",
             "Remove-Item \"$env:APPDATA\\.hmcl\" -Recurse -Force -ErrorAction SilentlyContinue"
         ]
     },
