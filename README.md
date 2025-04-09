@@ -12,6 +12,12 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 ## 收录清单
 
+### Anime
+
+| Name                                            | Mark |
+| ----------------------------------------------- | ---- |
+| [animeko](https://github.com/open-ani/animeko/) |      |
+
 ### Chat
 
 | Name                       | Mark                                                                                        |
