@@ -45,9 +45,10 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 ### Music
 
-| Name                                                 | Mark                                                                                      |
-| ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| [listen1_desktop](http://listen1.github.io/listen1/) | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/listen1desktop.json) |
+| Name                                                            | Mark                                                                                      |
+| --------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| [listen1_desktop](http://listen1.github.io/listen1/)            | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/listen1desktop.json) |
+| [lx-music-desktop](https://github.com/lyswhut/lx-music-desktop) |                                                                                           |
 
 ### Tools
 
