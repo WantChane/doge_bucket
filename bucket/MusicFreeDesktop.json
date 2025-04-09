@@ -1,5 +1,5 @@
 {
-    "version": "1.0",
+    "version": "0.0.7",
     "description": "插件化、定制化、无广告的免费音乐播放器 ",
     "homepage": "https://musicfree.catcat.work/",
     "license": "AGPL-3.0-only",
@@ -11,12 +11,8 @@
             "MusicFree"
         ]
     ],
-    "persist": [
-        "portable"
-    ],
-    "depends": [
-        "7zip"
-    ],
+    "persist": "portable",
+    "depends": "7zip",
     "pre_install": [
         "7z x -y -aoa \"$dir\\MusicFree-win32-x64-portable.zip\" -o\"$dir\" > $null 2>&1",
         "if ($?) {",
