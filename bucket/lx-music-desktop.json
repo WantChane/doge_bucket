@@ -19,6 +19,26 @@
             "lx music"
         ]
     ],
+    "installer": {
+        "script": [
+            "$source = \"$persist_dir\\log\"",
+            "$target = \"$env:APPDATA\\lx-music-desktop\"",
+            "ensure \"$source\" | Out-Null",
+            "if (Test-Path $target) {",
+            "    $linkType = (Get-Item -Path $target -ErrorAction SilentlyContinue).LinkType",
+            "    if ($linkType -eq 'Junction') {",
+            "        Remove-Item -Path $target -Force",
+            "    } else {",
+            "        Get-ChildItem -Path $target -Force | Move-Item -Destination \"$source\" -Force",
+            "        Remove-Item -Path $target -Force -Recurse",
+            "    }",
+            "}",
+            "New-Item -Path \"$target\" -ItemType Junction -Value \"$source\" -Force | Out-Null"
+        ]
+    },
+    "uninstaller": {
+        "script": "Remove-Item \"$env:APPDATA\\lx-music-desktop\" -Recurse -Force -ErrorAction 'SilentlyContinue'"
+    },
     "persist": "portable",
     "checkver": "github",
     "autoupdate": {
