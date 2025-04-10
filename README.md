@@ -61,6 +61,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 | Name                                                                   | Mark                                                                                                |
 | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [eza](https://github.com/eza-community/eza)                            | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/eza.json)                          |
 | [Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager) |                                                                                                     |
 | [RegistryFinder](https://registry-finder.com/)                         | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json) |
 | [SwitchHosts](https://switchhosts.vercel.app/zh)                       | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/switchhosts.json)              |
