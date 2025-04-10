@@ -53,17 +53,14 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Voxelum/x-minecraft-launcher/releases/download/v$version/xmcl-$version-win32-x64.zip",
-                "hash": {
-                    "url": "https://github.com/Voxelum/x-minecraft-launcher/releases/download/v$version/xmcl-$version-win32-x64.zip.sha256"
-                }
+                "url": "https://github.com/Voxelum/x-minecraft-launcher/releases/download/v$version/xmcl-$version-win32-x64.zip"
             },
             "32bit": {
-                "url": "https://github.com/Voxelum/x-minecraft-launcher/releases/download/v$version/xmcl-$version-win32-ia32.zip",
-                "hash": {
-                    "url": "https://github.com/Voxelum/x-minecraft-launcher/releases/download/v$version/xmcl-$version-win32-ia32.zip.sha256"
-                }
+                "url": "https://github.com/Voxelum/x-minecraft-launcher/releases/download/v$version/xmcl-$version-win32-ia32.zip"
             }
+        },
+        "hash": {
+            "url": "$url.sha256"
         }
     }
 }
