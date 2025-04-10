@@ -28,7 +28,10 @@
             }
         }
     },
-    "persist": "config",
+    "persist": [
+        "config",
+        "debug"
+    ],
     "shortcuts": [
         [
             "MAA.exe",
