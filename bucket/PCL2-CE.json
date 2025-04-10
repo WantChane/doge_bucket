@@ -49,8 +49,7 @@
         "script": [
             "$reg_path = \"HKEY_CURRENT_USER\\Software\\PCLCE\"",
             "$reg_data = \"$persist_dir\\PCL2-CE.reg\"",
-            "reg.exe query \"$reg_path\" | Out-Null",
-            "if ($LASTEXITCODE -eq 0) {",
+            "if (Test-Path \"Registry::$reg_path\") {",
             "    reg.exe export \"$reg_path\" \"$reg_data\" /y | Out-Null",
             "}",
             "reg.exe import \"$dir\\uninstall.reg\" | Out-Null"
