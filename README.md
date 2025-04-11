@@ -57,6 +57,14 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | [listen1_desktop](http://listen1.github.io/listen1/)              | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/listen1desktop.json) |
 | [lx-music-desktop](https://github.com/lyswhut/lx-music-desktop)   |                                                                                           |
 
+### Player
+
+| Name                                                    | Mark                                             |
+| ------------------------------------------------------- | ------------------------------------------------ |
+| [MPV_lazy](https://github.com/hooke007/MPV_lazy)        | mpv-lazy 标准包,执行 installer/mpv-install.bat   |
+| [MPV_lazy_unique](https://github.com/hooke007/MPV_lazy) | mpv-lazy 标准包, 执行 installer/umpv-install.bat |
+| [MPV_lazy_vsNV](https://github.com/hooke007/MPV_lazy)   | mpv-lazy vsNV 补丁包                             |
+
 ### Tools
 
 | Name                                                                   | Mark                                                                                                |
