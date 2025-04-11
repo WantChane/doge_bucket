@@ -24,13 +24,15 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | -------------------------- | ------------------------------------------------------------------------------------------- |
 | [Tim](https://tim.qq.com/) | [Scoopforge/Extras-CN](https://github.com/Scoopforge/Extras-CN/blob/master/bucket/tim.json) |
 
-### MAA
+### Game
+
+#### Arknights
 
 | Name                                      | Mark                                                                                  |
 | ----------------------------------------- | ------------------------------------------------------------------------------------- |
 | [MaaAssistantArknights](https://maa.plus) | [cel-ti/maa-bucket](https://github.com/cel-ti/maa-bucket/blob/master/bucket/maa.json) |
 
-### Minecraft Launcher
+#### Minecraft Launcher
 
 | Name                                                    | Mark                                                                                     |
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -41,7 +43,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | [PCL2-CE](https://pcl-community.github.io/PCL2-CE-Web/) |                                                                                          |
 | [x-minecraft-launcher](https://xmcl.app/zh/)            |                                                                                          |
 
-### Minecraft Server
+#### Minecraft Server
 
 | Name                                      | Mark |
 | ----------------------------------------- | ---- |
@@ -49,31 +51,36 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | [MCSManager](https://www.mcsmanager.com/) |      |
 | [MSL](https://www.mslmc.cn/)              |      |
 
+#### Other
+
+| Name                                                                   | Mark |
+| ---------------------------------------------------------------------- | ---- |
+| [Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager) |      |
+
 ### Music
 
 | Name                                                              | Mark                                                                                      |
 | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| [MusicFreeDesktop](https://github.com/maotoumao/MusicFreeDesktop) |                                                                                           |
 | [listen1_desktop](http://listen1.github.io/listen1/)              | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/listen1desktop.json) |
 | [lx-music-desktop](https://github.com/lyswhut/lx-music-desktop)   |                                                                                           |
+| [MusicFreeDesktop](https://github.com/maotoumao/MusicFreeDesktop) |                                                                                           |
 
 ### Player
 
 | Name                                                    | Mark                                             |
 | ------------------------------------------------------- | ------------------------------------------------ |
-| [MPV_lazy](https://github.com/hooke007/MPV_lazy)        | mpv-lazy 标准包, 执行 installer/mpv-install.bat   |
+| [MPV_lazy](https://github.com/hooke007/MPV_lazy)        | mpv-lazy 标准包, 执行 installer/mpv-install.bat  |
 | [MPV_lazy_unique](https://github.com/hooke007/MPV_lazy) | mpv-lazy 标准包, 执行 installer/umpv-install.bat |
-| [MPV_lazy_vsNV](https://github.com/hooke007/MPV_lazy)   | mpv-lazy vsNV 补丁包                             |
+| [MPV_lazy_vsNV](https://github.com/hooke007/MPV_lazy)   | mpv-lazy vsNV 补丁包 <br>                        |
 
 ### Tools
 
-| Name                                                                   | Mark                                                                                                |
-| ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [eza](https://github.com/eza-community/eza)                            | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/eza.json)                          |
-| [Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager) |                                                                                                     |
-| [RegistryFinder](https://registry-finder.com/)                         | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json) |
-| [SwitchHosts](https://switchhosts.vercel.app/zh)                       | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/switchhosts.json)              |
-| [zoxide](https://github.com/ajeetdsouza/zoxide)                        | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/zoxide.json)                       |
+| Name                                             | Mark                                                                                                |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| [eza](https://github.com/eza-community/eza)      | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/eza.json)                          |
+| [RegistryFinder](https://registry-finder.com/)   | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json) |
+| [SwitchHosts](https://switchhosts.vercel.app/zh) | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/switchhosts.json)              |
+| [zoxide](https://github.com/ajeetdsouza/zoxide)  | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/zoxide.json)                       |
 
 ## 命名规范
 
