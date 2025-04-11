@@ -61,7 +61,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 | Name                                                    | Mark                                             |
 | ------------------------------------------------------- | ------------------------------------------------ |
-| [MPV_lazy](https://github.com/hooke007/MPV_lazy)        | mpv-lazy 标准包,执行 installer/mpv-install.bat   |
+| [MPV_lazy](https://github.com/hooke007/MPV_lazy)        | mpv-lazy 标准包, 执行 installer/mpv-install.bat   |
 | [MPV_lazy_unique](https://github.com/hooke007/MPV_lazy) | mpv-lazy 标准包, 执行 installer/umpv-install.bat |
 | [MPV_lazy_vsNV](https://github.com/hooke007/MPV_lazy)   | mpv-lazy vsNV 补丁包                             |
 
