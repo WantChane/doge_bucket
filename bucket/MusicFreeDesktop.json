@@ -14,10 +14,7 @@
     "persist": "portable",
     "depends": "7zip",
     "pre_install": [
-        "7z x -y -aoa \"$dir\\MusicFree-win32-x64-portable.zip\" -o\"$dir\" > $null 2>&1",
-        "if ($?) {",
-        "   Remove-Item -Path \"$dir\\MusicFree-win32-x64-portable.zip\"",
-        "}"
+        "Expand-7zipArchive -Path \"$dir\\MusicFree-win32-x64-portable.zip\" -Overwrite All -Removal"
     ],
     "checkver": {
         "github": "https://github.com/maotoumao/MusicFreeDesktop"
