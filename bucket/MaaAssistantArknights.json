@@ -30,7 +30,8 @@
     },
     "persist": [
         "config",
-        "debug"
+        "debug",
+        "background"
     ],
     "shortcuts": [
         [
