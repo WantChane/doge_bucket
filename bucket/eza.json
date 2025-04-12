@@ -18,10 +18,10 @@
         ]
     ],
     "persist": [
-        "eza"
+        "config"
     ],
     "env_set": {
-        "EZA_CONFIG_DIR": "$persist/eza"
+        "EZA_CONFIG_DIR": "$dir\\config"
     },
     "checkver": "github",
     "autoupdate": {
