@@ -33,6 +33,7 @@
         "debug",
         "background"
     ],
+    "bin": "MAA.exe",
     "shortcuts": [
         [
             "MAA.exe",
