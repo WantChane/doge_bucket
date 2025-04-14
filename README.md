@@ -18,6 +18,13 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | ----------------------------------------------- | ---- |
 | [animeko](https://github.com/open-ani/animeko/) |      |
 
+### Browser
+
+| Name                                            | Mark                                                                             |
+| ----------------------------------------------- | -------------------------------------------------------------------------------- |
+| [firefox](https://www.mozilla.org/firefox/)     | [main](https://github.com/ScoopInstaller/Extras/blob/master/bucket/firefox.json) |
+| [zen-browser_desktop](https://zen-browser.app/) |                                                                                  |
+
 ### Chat
 
 | Name                       | Mark                                                                                        |
