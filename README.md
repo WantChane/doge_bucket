@@ -74,17 +74,18 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 ### Player
 
-| Name                                                    | Mark                                             |
-| ------------------------------------------------------- | ------------------------------------------------ |
-| [MPV_lazy](https://github.com/hooke007/MPV_lazy)        | mpv-lazy 标准包, 执行 installer/mpv-install.bat  |
-| [MPV_lazy_unique](https://github.com/hooke007/MPV_lazy) | mpv-lazy 标准包, 执行 installer/umpv-install.bat |
-| [MPV_lazy_vsNV](https://github.com/hooke007/MPV_lazy)   | mpv-lazy vsNV 补丁包 <br>                        |
+| Name                                                    | Mark                                              |
+| ------------------------------------------------------- | ------------------------------------------------- |
+| [MPV_lazy](https://github.com/hooke007/MPV_lazy)        | mpv-lazy 标准包, 执行 installer/mpv-install. bat  |
+| [MPV_lazy_unique](https://github.com/hooke007/MPV_lazy) | mpv-lazy 标准包, 执行 installer/umpv-install. bat |
+| [MPV_lazy_vsNV](https://github.com/hooke007/MPV_lazy)   | mpv-lazy vsNV 补丁包 <br>                         |
 
 ### Tools
 
 | Name                                             | Mark                                                                                                |
 | ------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
 | [eza](https://github.com/eza-community/eza)      | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/eza.json)                          |
+| [PicList](https://piclist.cn/)                   | [hoilc/scoop-lemon](https://github.com/hoilc/scoop-lemon/blob/master/bucket/piclist.json)           |
 | [RegistryFinder](https://registry-finder.com/)   | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json) |
 | [SwitchHosts](https://switchhosts.vercel.app/zh) | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/switchhosts.json)              |
 | [zoxide](https://github.com/ajeetdsouza/zoxide)  | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/zoxide.json)                       |
