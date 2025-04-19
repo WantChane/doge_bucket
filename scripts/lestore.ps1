@@ -1,3 +1,6 @@
+# 参考 https://github.com/ZhangTianrong/scoop-bucket/blob/master/bucket/dandanplay.json
+# 以及 DeepSeek
+
 function Invoke-LeStoreApi {
     param(
         [Parameter(Mandatory)]
