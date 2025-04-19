@@ -29,23 +29,15 @@
             "$source = \"$persist_dir\\Tencent Files\"",
             "$personalPath = Get-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\" -Name \"Personal\" | Select-Object -ExpandProperty Personal",
             "$target = \"$personalPath\\Tencent Files\"",
-            "ensure \"$source\" | Out-Null",
-            "if (Test-Path $target) {",
-            "    $linkType = (Get-Item -Path $target -ErrorAction SilentlyContinue).LinkType",
-            "    if ($linkType -eq 'Junction') {",
-            "        Remove-Item -Path $target -Force",
-            "    } else {",
-            "        Get-ChildItem -Path $target -Force | Move-Item -Destination \"$source\" -Force",
-            "        Remove-Item -Path $target -Force -Recurse",
-            "    }",
-            "}",
-            "New-Item -Path \"$target\" -ItemType Junction -Value \"$source\" -Force | Out-Null"
+            ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+            "Ensure-Junction -Source \"$source\" -Target \"$target\""
         ]
     },
     "uninstaller": {
         "script": [
+            ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
             "$personalPath = Get-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\" -Name \"Personal\" | Select-Object -ExpandProperty Personal",
-            "Remove-Item \"$personalPath\\Tencent Files\" -Recurse -Force -ErrorAction SilentlyContinue"
+            "Remove-Junction -Path \"$personalPath\\Tencent Files\""
         ]
     },
     "checkver": {

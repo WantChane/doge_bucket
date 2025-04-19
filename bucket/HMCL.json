@@ -26,27 +26,14 @@
     ],
     "installer": {
         "script": [
-            "$links = @(",
-            "    @{ source = \"$persist_dir\\HMCL\\.hmcl\"; target = \"$env:APPDATA\\.hmcl\" }",
-            ")",
-            "foreach ($link in $links) {",
-            "    ensure $($link.source) | Out-Null",
-            "    if (Test-Path $($link.target)) {",
-            "        $linkType = (Get-Item -Path $($link.target) -ErrorAction SilentlyContinue).LinkType",
-            "        if ($linkType -eq 'Junction') {",
-            "            Remove-Item -Path $($link.target) -Force",
-            "        } else {",
-            "            Get-ChildItem -Path $($link.target) -Force | Move-Item -Destination $($link.source) -Force",
-            "            Remove-Item -Path $($link.target) -Force -Recurse",
-            "        }",
-            "    }",
-            "    New-Item -Path $($link.target) -ItemType Junction -Value $($link.source) -Force | Out-Null",
-            "}"
+            ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+            "Ensure-Junction -Source \"$persist_dir\\HMCL\\.hmcl\" -Target \"$env:APPDATA\\.hmcl\""
         ]
     },
     "uninstaller": {
         "script": [
-            "Remove-Item \"$env:APPDATA\\.hmcl\" -Recurse -Force -ErrorAction SilentlyContinue"
+            ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+            "Remove-Junction -Path \"$env:APPDATA\\.hmcl\""
         ]
     },
     "checkver": {
