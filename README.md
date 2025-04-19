@@ -14,9 +14,10 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 ### Anime
 
-| Name                                            | Mark |
-| ----------------------------------------------- | ---- |
-| [animeko](https://github.com/open-ani/animeko/) |      |
+| Name                                            | Mark                                                                                                           |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| [animeko](https://github.com/open-ani/animeko/) |                                                                                                                |
+| [DanDanPlay](https://www.dandanplay.com/)       | [ZhangTianrong/scoop-bucket](https://github.com/ZhangTianrong/scoop-bucket/blob/master/bucket/dandanplay.json) |
 
 ### Browser
 
