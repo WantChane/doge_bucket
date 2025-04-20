@@ -2,7 +2,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '20 */4 * * *'
-name: Excavator
+name: Excavator-test
 jobs:
   excavate:
     name: Excavate-test
@@ -26,5 +26,5 @@ jobs:
         shell: pwsh
         run: |
           Write-Host "检查 Scoop 安装后目录结构:"
-          Get-ChildItem -Path "C:\Users\runneradmin\SCOOP\buckets" -Recurse -Depth 2
+          Get-ChildItem -Path "C:\Users\runneradmin\SCOOP\buckets"  | Out-String
 
