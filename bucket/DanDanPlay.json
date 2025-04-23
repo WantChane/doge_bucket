@@ -45,7 +45,11 @@
     "lestoreid": "10343",
     "checkver": {
         "script": [
-            ". \"$bucketsdir\\doge\\scripts\\lestore.ps1\"",
+            "$path1 = \"$bucketsdir\\doge\\scripts\\lestore.ps1\"",
+            "$path2 = \"D:\\a\\doge_bucket\\doge_bucket\\scripts\\lestore.ps1\"",
+            "if (Test-Path $path1) { . $path1 }",
+            "elseif (Test-Path $path2) { . $path2 }",
+            "else { throw '未找到 lestore.ps1 文件，请检查路径配置' }",
             "$officialPage = Invoke-WebRequest -Uri 'https://www.dandanplay.com/' -UseBasicParsing",
             "if ($officialPage.Content -match '(?<=最新版本)[^\\d]*(\\d+(\\.\\d+)+)') {",
             "    $officialVersion = $Matches[1]",
