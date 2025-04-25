@@ -4,7 +4,7 @@
 
 1. 该仓库部分软件安装步骤中含有注册表操作, 例如 PCL2
 2. 该仓库部分软件安装步骤中需要访问 Scoop 安装目录下 buckets\doge 文件夹, 因此不建议修改下面命令中的仓库名
-3. 该仓库部分软件安装步骤中会操作非 Scoop 目录, 例如 Tim 会在 Documents 文件夹下新建软链接
+3. 该仓库部分软件安装步骤中会操作非 Scoop 目录, 例如 Tim 会持久化 Documents/Tencent Files
 
 ```powershell
 scoop bucket add doge https://github.com/WantChane/doge_bucket.git
