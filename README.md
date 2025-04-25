@@ -81,18 +81,24 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | [MPV_lazy_unique](https://github.com/hooke007/MPV_lazy) | mpv-lazy 标准包, 执行 installer/umpv-install. bat |
 | [MPV_lazy_vsNV](https://github.com/hooke007/MPV_lazy)   | mpv-lazy vsNV 补丁包 <br>                         |
 
+### Terminal
+
+| Name                                                   | Mark                                                                                                                                                                                                                                        |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [eza](https://github.com/eza-community/eza)            | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/eza.json)                                                                                                                                                                  |
+| [PowerShell](https://github.com/PowerShell/PowerShell) | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/pwsh.json), 持久化了 Documents/PowerShell 文件夹, 如果你不知道这意味着什么, 建议使用 main 中的 [pwsh](https://github.com/ScoopInstaller/Main/blob/master/bucket/pwsh.json) |
+| [websocat](https://github.com/vi/websocat)             |                                                                                                                                                                                                                                             |
+| [zoxide](https://github.com/ajeetdsouza/zoxide)        | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/zoxide.json)                                                                                                                                                               |
+
 ### Tools
 
 | Name                                             | Mark                                                                                                |
 | ------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| [eza](https://github.com/eza-community/eza)      | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/eza.json)                          |
 | [MinerU](https://mineru.net/)                    | 下载链接可能过时                                                                                    |
 | [PicList](https://piclist.cn/)                   | [hoilc/scoop-lemon](https://github.com/hoilc/scoop-lemon/blob/master/bucket/piclist.json)           |
 | [RegistryFinder](https://registry-finder.com/)   | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json) |
 | [SwitchHosts](https://switchhosts.vercel.app/zh) | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/switchhosts.json)              |
 | [texlive](https://tug.org/texlive/)              | [ehsu/dorado](https://github.com/chawyehsu/dorado/blob/master/bucket/texlive.json)                  |
-| [websocat](https://github.com/vi/websocat)       |                                                                                                     |
-| [zoxide](https://github.com/ajeetdsouza/zoxide)  | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/zoxide.json)                       |
 
 ## 命名规范
 
