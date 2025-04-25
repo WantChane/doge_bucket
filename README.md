@@ -91,6 +91,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | [RegistryFinder](https://registry-finder.com/)   | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json) |
 | [SwitchHosts](https://switchhosts.vercel.app/zh) | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/switchhosts.json)              |
 | [texlive](https://tug.org/texlive/)              | [ehsu/dorado](https://github.com/chawyehsu/dorado/blob/master/bucket/texlive.json)                  |
+| [websocat](https://github.com/vi/websocat)       |                                                                                                     |
 | [zoxide](https://github.com/ajeetdsouza/zoxide)  | [main](https://github.com/ScoopInstaller/Main/blob/master/bucket/zoxide.json)                       |
 
 ## 命名规范

@@ -6,7 +6,7 @@
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "http://lsw-fast.lenovo.com.cn/appstore/apps/adp/pkg/1997-2025-02-17103833-1739759913728.exe#/dandanplay-x64_15.13.0.exe",
+            "url": "https://lsw-fast.lenovo.com.cn/appstore/apps/adp/pkg/1997-2025-02-17103833-1739759913728.exe#/dandanplay-x64_15.13.0.exe",
             "hash": "18dfe3763cec0cc461d99f5ba51aa76e570115b9f275fa8b7e7e82b25016b502"
         }
     },
@@ -42,7 +42,6 @@
         "Log",
         "Cache"
     ],
-    "lestoreid": "10343",
     "checkver": {
         "script": [
             "$path1 = \"$bucketsdir\\doge\\scripts\\lestore.ps1\"",
@@ -50,23 +49,25 @@
             "if (Test-Path $path1) { . $path1 }",
             "elseif (Test-Path $path2) { . $path2 }",
             "else { throw '未找到 lestore.ps1 文件，请检查路径配置' }",
+            "$lestoreid = \"10343\"",
             "$officialPage = Invoke-WebRequest -Uri 'https://www.dandanplay.com/' -UseBasicParsing",
             "if ($officialPage.Content -match '(?<=最新版本)[^\\d]*(\\d+(\\.\\d+)+)') {",
             "    $officialVersion = $Matches[1]",
             "} else {",
             "    throw 'Failed to get version from official website'",
             "}",
-            "$leStoreVersion = Get-LeStoreAppVersion -SoftwareId $($json.lestoreid)",
+            "$leStoreVersion = Get-LeStoreAppVersion -SoftwareId $lestoreid",
             "if ($officialVersion -ne $leStoreVersion) {",
             "    throw \"Version mismatch! Official: $officialVersion vs LeStore: $leStoreVersion\"",
             "}",
-            "$downloadLink = Get-LeStoreDownloadUrl -SoftwareId $($json.lestoreid)",
+            "$downloadLink = Get-LeStoreDownloadUrl -SoftwareId $lestoreid",
+            "$downloadLink = $downloadLink -replace '^https?://'",
             "\"$($officialVersion)以及$($downloadLink)\""
         ],
         "regex": "(?<Version>\\d+(?:\\.\\d+)+)以及(?<URL>.*)$",
         "replace": "${Version}"
     },
     "autoupdate": {
-        "url": "$matchURL#/dandanplay-x64_$version.exe"
+        "url": "https://$matchURL#/dandanplay-x64_$version.exe"
     }
 }
