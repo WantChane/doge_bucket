@@ -42,7 +42,8 @@
         "        defaultInstallPath = \"$persist_dir\\Games\"",
         "        defaultSteamPath   = \"$steamPath\"",
         "    }",
-        "} | ConvertTo-Json -Depth 3 | Out-File -FilePath \"$configPath\" -Encoding UTF8"
+        "} | ConvertTo-Json -Depth 3 | Out-File -FilePath \"$configPath\" -Encoding UTF8",
+        "# MARK:PowerShell Json UTF8 BOM"
     ],
     "uninstaller": {
         "script": [
