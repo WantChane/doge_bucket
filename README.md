@@ -64,6 +64,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | Name                                                                   | Mark |
 | ---------------------------------------------------------------------- | ---- |
 | [Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager) |      |
+| [HeroicGamesLauncher](https://heroicgameslauncher.com/)                |      |
 
 ### Music
 
