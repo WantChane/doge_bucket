@@ -1,10 +1,10 @@
 {
-    "version": "4.9.0",
+    "version": "4.9.1",
     "description": "集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose Multiplatform ",
     "homepage": "https://github.com/open-ani/animeko",
     "license": "AGPL-3.0-only",
-    "url": "https://github.com/open-ani/animeko/releases/download/v4.9.0/ani-4.9.0-windows-x86_64.zip",
-    "hash": "sha1:359095bb559fd5aa4c621cda571cfe16bd15dc25",
+    "url": "https://github.com/open-ani/animeko/releases/download/v4.9.1/ani-4.9.1-windows-x86_64.zip",
+    "hash": "sha1:2853befd46b3a5fd15035229506963d49df60b8f",
     "extract_dir": "Ani",
     "installer": {
         "script": [
