@@ -95,6 +95,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 | Name                                             | Mark                                                                                                |
 | ------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| [AltSnap](https://github.com/RamonUnch/AltSnap)  | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/altsnap.json)                  |
 | [MinerU](https://mineru.net/)                    | 下载链接可能过时                                                                                    |
 | [PicList](https://piclist.cn/)                   | [hoilc/scoop-lemon](https://github.com/hoilc/scoop-lemon/blob/master/bucket/piclist.json)           |
 | [RegistryFinder](https://registry-finder.com/)   | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json) |
