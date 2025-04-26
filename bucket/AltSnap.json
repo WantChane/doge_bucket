@@ -19,7 +19,6 @@
             "AltSnap"
         ]
     ],
-    "bin": "AltSnap.exe",
     "persist": "AltSnap.ini",
     "checkver": "github",
     "post_install": [
