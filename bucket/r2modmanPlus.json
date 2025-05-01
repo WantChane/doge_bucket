@@ -3,13 +3,8 @@
     "description": "A simple and easy to use mod manager for several games using Thunderstore",
     "homepage": "https://github.com/ebkr/r2modmanPlus",
     "license": "MIT",
-    "url": "https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.58/r2modman-Setup-3.1.58.exe#/dl.7z",
-    "hash": "fd90f5e302b81ccf14549e502af6a7c4d32d63457bca4023c91cceb4862647f2",
-    "pre_install": [
-        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-        "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
-    ],
-    "post_uninstall": "",
+    "url": "https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.58/r2modman-3.1.58.exe#/r2modman.exe",
+    "hash": "f64191f67a3fe25a42829681ed4d9ff1301eb4ce1001901f9fbb80221bed4807",
     "shortcuts": [
         [
             "r2modman.exe",
@@ -32,6 +27,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/ebkr/r2modmanPlus/releases/download/v$version/r2modman-Setup-$version.exe#/dl.7z"
+        "url": "https://github.com/ebkr/r2modmanPlus/releases/download/v$version/r2modman-$version.exe#/r2modman.exe"
     }
 }
