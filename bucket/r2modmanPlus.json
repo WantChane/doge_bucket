@@ -1,0 +1,37 @@
+{
+    "version": "3.1.58",
+    "description": "A simple and easy to use mod manager for several games using Thunderstore",
+    "homepage": "https://github.com/ebkr/r2modmanPlus",
+    "license": "MIT",
+    "url": "https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.58/r2modman-Setup-3.1.58.exe#/dl.7z",
+    "hash": "fd90f5e302b81ccf14549e502af6a7c4d32d63457bca4023c91cceb4862647f2",
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+        "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
+    ],
+    "post_uninstall": "",
+    "shortcuts": [
+        [
+            "r2modman.exe",
+            "r2modman"
+        ]
+    ],
+    "installer": {
+        "script": [
+            ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+            "Ensure-Junction -Source \"$persist_dir\\r2modman\" -Target \"$env:APPDATA\\r2modman\"",
+            "Ensure-Junction -Source \"$persist_dir\\r2modmanPlus-local\" -Target \"$env:APPDATA\\r2modmanPlus-local\""
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+            "Remove-Junction -Path \"$env:APPDATA\\r2modman\"",
+            "Remove-Junction -Path \"$env:APPDATA\\r2modmanPlus-local\""
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/ebkr/r2modmanPlus/releases/download/v$version/r2modman-Setup-$version.exe#/dl.7z"
+    }
+}
