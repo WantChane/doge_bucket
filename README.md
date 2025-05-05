@@ -105,11 +105,12 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 #### Other
 
-| Name                                  | Mark                                                                                      |
-| ------------------------------------- | ----------------------------------------------------------------------------------------- |
-| [MinerU_nightly](https://mineru.net/) | 下载链接可能过时                                                                          |
-| [PicList](https://piclist.cn/)        | [hoilc/scoop-lemon](https://github.com/hoilc/scoop-lemon/blob/master/bucket/piclist.json) |
-| [texlive](https://tug.org/texlive/)   | [ehsu/dorado](https://github.com/chawyehsu/dorado/blob/master/bucket/texlive.json)        |
+| Name                                          | Mark                                                                                      |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| [MinerU_nightly](https://mineru.net/)         | 下载链接可能过时                                                                          |
+| [PicList](https://piclist.cn/)                | [hoilc/scoop-lemon](https://github.com/hoilc/scoop-lemon/blob/master/bucket/piclist.json) |
+| [rime-ice](https://github.com/iDvel/rime-ice) | [xrgzs/sdoog](https://github.com/xrgzs/sdoog/blob/master/bucket/rime-ice.json)            |
+| [texlive](https://tug.org/texlive/)           | [ehsu/dorado](https://github.com/chawyehsu/dorado/blob/master/bucket/texlive.json)        |
 
 ## 命名规范
 
