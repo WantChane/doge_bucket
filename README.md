@@ -79,19 +79,20 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 ### Music
 
+#### Player
+
 | Name                                                              | Mark                                                                                      |
 | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | [listen1_desktop](http://listen1.github.io/listen1/)              | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/listen1desktop.json) |
 | [lx-music-desktop](https://github.com/lyswhut/lx-music-desktop)   |                                                                                           |
 | [MusicFreeDesktop](https://github.com/maotoumao/MusicFreeDesktop) |                                                                                           |
 
-### Player
+#### Tools
 
-| Name                                                    | Mark                                              |
-| ------------------------------------------------------- | ------------------------------------------------- |
-| [MPV_lazy](https://github.com/hooke007/MPV_lazy)        | mpv-lazy 标准包, 执行 installer/mpv-install. bat  |
-| [MPV_lazy_unique](https://github.com/hooke007/MPV_lazy) | mpv-lazy 标准包, 执行 installer/umpv-install. bat |
-| [MPV_lazy_vsNV](https://github.com/hooke007/MPV_lazy)   | mpv-lazy vsNV 补丁包 <br>                         |
+| Name                                       | Mark |
+| ------------------------------------------ | ---- |
+| [Lyricify-App_4](https://lyricify.app/)    |      |
+| [Lyricify-App_Lite](https://lyricify.app/) |      |
 
 ### Tools
 
@@ -102,6 +103,16 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | [AltSnap](https://github.com/RamonUnch/AltSnap)  | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/altsnap.json)                  |
 | [RegistryFinder](https://registry-finder.com/)   | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json) |
 | [SwitchHosts](https://switchhosts.vercel.app/zh) | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/switchhosts.json)              |
+
+### Video
+
+#### Player
+
+| Name                                                    | Mark                                              |
+| ------------------------------------------------------- | ------------------------------------------------- |
+| [MPV_lazy](https://github.com/hooke007/MPV_lazy)        | mpv-lazy 标准包, 执行 installer/mpv-install. bat  |
+| [MPV_lazy_unique](https://github.com/hooke007/MPV_lazy) | mpv-lazy 标准包, 执行 installer/umpv-install. bat |
+| [MPV_lazy_vsNV](https://github.com/hooke007/MPV_lazy)   | mpv-lazy vsNV 补丁包 <br>                         |
 
 #### Other
 
