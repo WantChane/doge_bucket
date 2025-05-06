@@ -89,10 +89,11 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 #### Tools
 
-| Name                                       | Mark |
-| ------------------------------------------ | ---- |
-| [Lyricify-App_4](https://lyricify.app/)    |      |
-| [Lyricify-App_Lite](https://lyricify.app/) |      |
+| Name                                                       | Mark |
+| ---------------------------------------------------------- | ---- |
+| [Lyricify-App_4](https://lyricify.app/)                    |      |
+| [Lyricify-App_Lite](https://lyricify.app/)                 |      |
+| [MusicTag](https://www.cnblogs.com/vinlxc/p/11347744.html) |      |
 
 ### Tools
 

@@ -1,0 +1,24 @@
+{
+    "version": "1.0.9.0",
+    "description": "『音乐标签』是一款可以编辑歌曲的标题，专辑，艺术家等信息的应用程序， 支持FLAC, APE, WAV, AIFF, WV, TTA, MP3, MP4, M4A, OGG, MPC, OPUS, WMA, DSF, DFF等音频格式，绿色无广告，无任何功能限制。",
+    "homepage": "https://www.cnblogs.com/vinlxc/p/11347744.html",
+    "license": "Unknown",
+    "url": "https://api.xrgzs.top/lanzou/?url=https://wwc.lanzouy.com/ik0lo0ae7bcf&type=down#/dl.tmp",
+    "hash": "71b58bc9d75fcb3702e53021ff152324fcc39aaf417159e2bd5c4a49b2170cd5",
+    "pre_install": [
+        "$archivePath = \"$dir\\dl.tmp\"",
+        "$extractPath = \"$dir\"",
+        "$password = \"www.coolapk.com\"",
+        "7z x $archivePath -p\"$password\" -o\"$extractPath\" > $null",
+        "Remove-Item $archivePath -Force"
+    ],
+    "shortcuts": [
+        [
+            "MusicTag.exe",
+            "MusicTag"
+        ]
+    ],
+    "notes": [
+        "蓝奏云直链解析来自https://api.xrgzs.top/，一个用于收集不同软件直接下载链接解析方式的后端项目，潇然系统的子项目之一🌟🚀"
+    ]
+}
