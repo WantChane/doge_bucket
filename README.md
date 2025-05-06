@@ -105,6 +105,15 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | [RegistryFinder](https://registry-finder.com/)   | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/registry-finder.json) |
 | [SwitchHosts](https://switchhosts.vercel.app/zh) | [extras](https://github.com/ScoopInstaller/Extras/blob/master/bucket/switchhosts.json)              |
 
+#### Other
+
+| Name                                          | Mark                                                                                      |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| [MinerU_nightly](https://mineru.net/)         | 下载链接可能过时                                                                          |
+| [PicList](https://piclist.cn/)                | [hoilc/scoop-lemon](https://github.com/hoilc/scoop-lemon/blob/master/bucket/piclist.json) |
+| [rime-ice](https://github.com/iDvel/rime-ice) | [xrgzs/sdoog](https://github.com/xrgzs/sdoog/blob/master/bucket/rime-ice.json)            |
+| [texlive](https://tug.org/texlive/)           | [ehsu/dorado](https://github.com/chawyehsu/dorado/blob/master/bucket/texlive.json)        |
+
 ### Video
 
 #### Player
@@ -114,15 +123,6 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | [MPV_lazy](https://github.com/hooke007/MPV_lazy)        | mpv-lazy 标准包, 执行 installer/mpv-install. bat  |
 | [MPV_lazy_unique](https://github.com/hooke007/MPV_lazy) | mpv-lazy 标准包, 执行 installer/umpv-install. bat |
 | [MPV_lazy_vsNV](https://github.com/hooke007/MPV_lazy)   | mpv-lazy vsNV 补丁包 <br>                         |
-
-#### Other
-
-| Name                                          | Mark                                                                                      |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| [MinerU_nightly](https://mineru.net/)         | 下载链接可能过时                                                                          |
-| [PicList](https://piclist.cn/)                | [hoilc/scoop-lemon](https://github.com/hoilc/scoop-lemon/blob/master/bucket/piclist.json) |
-| [rime-ice](https://github.com/iDvel/rime-ice) | [xrgzs/sdoog](https://github.com/xrgzs/sdoog/blob/master/bucket/rime-ice.json)            |
-| [texlive](https://tug.org/texlive/)           | [ehsu/dorado](https://github.com/chawyehsu/dorado/blob/master/bucket/texlive.json)        |
 
 ## 命名规范
 
