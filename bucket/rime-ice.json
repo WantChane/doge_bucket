@@ -4,7 +4,10 @@
     "homepage": "https://github.com/iDvel/rime-ice",
     "description": "Rime 配置：雾凇拼音 | 长期维护的简体词库",
     "license": "GPL-3.0-only",
-    "notes": "请注意本 rime-ice 会安装到 weasel 安装目录,而不是用户目录",
+    "notes": [
+        "请注意本 rime-ice 会安装到 weasel 安装目录,而不是用户目录,如果你误安装了本 rime-ice",
+        "可以将 $dir\\backups\\$version 重命名后覆盖掉 weasel 安装目录 下的 data 文件夹"
+    ],
     "url": "https://github.com/iDvel/rime-ice/releases/download/nightly/full.zip",
     "hash": "d0942d10abbe0d3bcbd1b1122de4b13503c5b55cfab14f8ea81437a5c9e0cfec",
     "extract_to": "data",
@@ -19,8 +22,7 @@
         "$old = \"$weaselRoot\\data\"",
         "$backupDir = \"$dir\\backups\"",
         "ensure \"$backupDir\"",
-        "$timestamp = Get-Date -Format 'yyyyMMddHHmmss'",
-        "Move-Item -Path \"$old\" -Destination (Join-Path \"$backupDir\" \"$timestamp\") -Force",
+        "Move-Item -Path \"$old\" -Destination (Join-Path \"$backupDir\" \"$version\") -Force",
         "Copy-Item -Path \"$dir\\data\" -Destination $weaselRoot -Recurse -Force",
         "Start-Process -FilePath \"$weaselRoot\\WeaselDeployer.exe\" -ArgumentList \"/deploy\" -Wait -NoNewWindow"
     ],
