@@ -48,10 +48,18 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/$version/PCL2_CE_x64.exe"
+                "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/$version/PCL2_CE_x64.exe",
+                "hash": {
+                    "url": "https://github.com/PCL-Community/PCL2-CE/releases/latest",
+                    "regex": "x86_64 SR[\\s\\S]+?<td>$sha256</td>"
+                }
             },
             "arm64": {
-                "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/$version/PCL2_CE_ARM64.exe"
+                "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/$version/PCL2_CE_ARM64.exe",
+                "hash": {
+                    "url": "https://github.com/PCL-Community/PCL2-CE/releases/latest",
+                    "regex": "ARM64 SR[\\s\\S]+?<td>$sha256</td>"
+                }
             }
         }
     }
