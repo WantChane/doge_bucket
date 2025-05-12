@@ -23,18 +23,6 @@
             "PCL2_CE"
         ]
     ],
-    "pre_install": [
-        "$reg_data = \"$persist_dir\\PCL2-CE.reg\"",
-        "if (Test-Path -Path $reg_data) {",
-        "   reg.exe import \"$reg_data\" | Out-Null",
-        "}"
-    ],
-    "post_install": [
-        "'hide-hint.reg', 'show-hint.reg' , 'uninstall.reg' | ForEach-Object {",
-        "    $content = Get-Content \"$bucketsdir\\doge\\scripts\\PCL2-CE\\$_\"",
-        "    Set-Content \"$dir\\$_\" $content -Encoding Ascii",
-        "}"
-    ],
     "installer": {
         "script": [
             "if ($architecture -eq '64bit')",
@@ -42,17 +30,16 @@
             "   Rename-Item \"$dir\\PCL2_CE_x64.exe\" 'PCL2_CE.exe' -ErrorAction SilentlyContinue ",
             "} else {",
             "   Rename-Item \"$dir\\PCL2_CE_ARM64.exe\" 'PCL2_CE.exe' -ErrorAction SilentlyContinue ",
-            "}"
+            "}",
+            "",
+            ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+            "Ensure-Junction -Source \"$persist_dir\\.PCLCE\" -Target \"$env:APPDATA\\.PCLCE\""
         ]
     },
     "uninstaller": {
         "script": [
-            "$reg_path = \"HKEY_CURRENT_USER\\Software\\PCLCE\"",
-            "$reg_data = \"$persist_dir\\PCL2-CE.reg\"",
-            "if (Test-Path \"Registry::$reg_path\") {",
-            "    reg.exe export \"$reg_path\" \"$reg_data\" /y | Out-Null",
-            "}",
-            "reg.exe import \"$dir\\uninstall.reg\" | Out-Null"
+            ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+            "Remove-Junction -Path \"$env:APPDATA\\.PCLCE\""
         ]
     },
     "checkver": {
@@ -67,12 +54,5 @@
                 "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/$version/PCL2_CE_ARM64.exe"
             }
         }
-    },
-    "notes": [
-        "在注册表项中添加 UiLauncherCEHint 字符串值，值设置为 False 即可隐藏提示",
-        "或者执行:",
-        "'reg import \"$dir\\hide-hint.reg\"'",
-        "如果想要再次打开提示, 请执行:",
-        "'reg import \"$dir\\show-hint.reg\"'"
-    ]
+    }
 }
