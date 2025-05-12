@@ -1,24 +1,19 @@
 {
-    "##": "基于https://github.com/matthewjberger/scoop-nerd-fonts/blob/master/bucket/LXGW-Bright.json",
-    "version": "5.517",
-    "description": "LXGW Bright 是由 Ysabeau 系列字体 与 霞鹜文楷系列字体 合并而成的字体，采用 魔兽字体合并补全工具 合并。包含 TrueType 格式以及 WOFF2 格式。",
-    "homepage": "https://github.com/lxgw/LxgwBright",
+    "version": "1.510",
+    "description": "LXGW WenKai for Screen Reading.",
+    "homepage": "https://github.com/lxgw/LxgwWenKai-Screen",
     "license": "OFL-1.1",
     "url": [
-        "https://github.com/lxgw/LxgwBright/releases/download/v5.517/LXGWBright.7z",
-        "https://github.com/lxgw/LxgwBright/releases/download/v5.517/LXGWBrightGB.7z",
-        "https://github.com/lxgw/LxgwBright/releases/download/v5.517/LXGWBrightTC.7z"
+        "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v1.510/LXGWWenKaiScreen.ttf",
+        "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v1.510/LXGWWenKaiMonoScreen.ttf",
+        "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v1.510/LXGWWenKaiGBScreen.ttf",
+        "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v1.510/LXGWWenKaiMonoGBScreen.ttf"
     ],
     "hash": [
-        "2c46d781c7699a6b0553bb12541a73e5c308c3176ba5551e40879a48e489c01d",
-        "2ddfd3d6b8e85930cb6a5b142e5f94fe826413c8078e30e651ffeacda157dcc5",
-        "43ed03a42f2ca8004fa6c4647e1f85a9f08380f58365b185852f14d3d2f81651"
-    ],
-    "pre_install": [
-        "Get-ChildItem $dir\\LxgwBright* | ForEach-Object {",
-        "    Move-Item -Path \"$($_.FullName)\\*\" -Destination \"$dir\" -Force",
-        "    Remove-Item \"$($_.FullName)\" -Recurse -Force",
-        "}"
+        "24053cec96f782a4b5997629ad6298b79c67ccc565651f7dd8f366b2a9d31775",
+        "884b114d55ab4c1ac73f651dc631a820d99320eac0b058de14684c3727be9f58",
+        "496adb8e9b3906f9cf98a80e12ec7e6b72f31db6bd422aabf971f0eef75b17a4",
+        "db0f0a6714787afa5e842e7a2a786466c8043bc397d2d7361d5f126277e06d8d"
     ],
     "installer": {
         "script": [
@@ -103,9 +98,10 @@
     "checkver": "github",
     "autoupdate": {
         "url": [
-            "https://github.com/lxgw/LxgwBright/releases/download/v$version/LXGWBright.7z",
-            "https://github.com/lxgw/LxgwBright/releases/download/v$version/LXGWBrightGB.7z",
-            "https://github.com/lxgw/LxgwBright/releases/download/v$version/LXGWBrightTC.7z"
+            "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v$version/LXGWWenKaiScreen.ttf",
+            "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v$version/LXGWWenKaiMonoScreen.ttf",
+            "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v$version/LXGWWenKaiGBScreen.ttf",
+            "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v$version/LXGWWenKaiMonoGBScreen.ttf"
         ]
     }
 }
