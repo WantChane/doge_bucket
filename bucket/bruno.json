@@ -1,0 +1,43 @@
+{
+    "version": "2.3.0",
+    "homepage": "https://www.usebruno.com/",
+    "license": "MIT",
+    "description": "Bruno is a Git-integrated, fully offline, and open-source API client",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/usebruno/bruno/releases/download/v2.3.0/bruno_2.3.0_x64_win.zip",
+            "hash": "897785640ee2f52eb62596660a7b03599072e2b2f445c6e8be4cde1c81e16f79"
+        }
+    },
+    "installer": {
+        "script": [
+            ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+            "Ensure-Junction -Source \"$persist_dir\\AppData\" -Target \"$env:APPDATA\\bruno\""
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+            "Remove-Junction -Path \"$env:APPDATA\\bruno\""
+        ]
+    },
+    "persist": [
+        "collections"
+    ],
+    "shortcuts": [
+        [
+            "Bruno.exe",
+            "Bruno"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/usebruno/bruno"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/usebruno/bruno/releases/download/v$version/bruno_$version_x64_win.zip"
+            }
+        }
+    }
+}

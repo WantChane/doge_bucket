@@ -12,6 +12,13 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 ## 收录清单
 
+### API
+
+| Name                               | Mark |
+| ---------------------------------- | ---- |
+| [bruno](https://www.usebruno.com/) |      |
+| [yaak](https://yaak.app/)          |      |
+
 ### Anime
 
 | Name                                            | Mark                                                                                                           |
