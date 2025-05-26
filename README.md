@@ -72,7 +72,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | [BakaXL_InsiderParrot](https://www.bakaxl.com)          | 3.X 测试版                                                                               |
 | [BakaXL_Sloth](https://www.bakaxl.com)                  | 3.X 正式版                                                                               |
 | [HMCL](https://github.com/huanghongxun/HMCL)            | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/hmcl.json) |
-| [PCL2](https://github.com/Hex-Dragon/PCL2)              | 该链接不稳定                                                                             |
+| [PCL2](https://github.com/Hex-Dragon/PCL2)              |                                                                                          |
 | [PCL2-CE](https://pcl-community.github.io/PCL2-CE-Web/) |                                                                                          |
 | [x-minecraft-launcher](https://xmcl.app/zh/)            |                                                                                          |
 
