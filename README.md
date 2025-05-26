@@ -139,7 +139,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | [DockerDesktop](https://www.docker.com/products/docker-desktop/)           |                                                                                                           |
 | [IDM-Activation-Script](https://github.com/lstprjct/IDM-Activation-Script) | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/idm-activation-script.json) |
-| [MinerU_nightly](https://mineru.net/)                                      | 下载链接可能过时                                                                                          |
+| [MinerU](https://mineru.net/)                                              |                                                                                                           |
 | [PicList](https://piclist.cn/)                                             | [hoilc/scoop-lemon](https://github.com/hoilc/scoop-lemon/blob/master/bucket/piclist.json)                 |
 | [texlive](https://tug.org/texlive/)                                        | [ehsu/dorado](https://github.com/chawyehsu/dorado/blob/master/bucket/texlive.json)                        |
 
