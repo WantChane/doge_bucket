@@ -34,7 +34,6 @@
         "}",
         "info \"RIME-LMDG_LTS将会安装到: $rimeConfigRoot\"",
         "Start-Process -FilePath \"$weaselRoot\\stop_service.bat\" -Wait",
-        "Unblock-File -Path \"$dir\\wanxiang-lts-zh-hans.gram\"",
         "Copy-Item -Path \"$dir\\wanxiang-lts-zh-hans.gram\" -Destination \"$rimeConfigRoot\" -Force",
         "Start-Process -FilePath \"$weaselRoot\\start_service.bat\"",
         "info \"重新部署Weasel\"",
