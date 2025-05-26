@@ -1,10 +1,10 @@
 {
-    "version": "20250523",
+    "version": "20250526",
     "homepage": "https://github.com/WantChane/fcitx5-pinyin-prts",
     "description": "Rime 配置：雾凇拼音 | 长期维护的简体词库",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/WantChane/fcitx5-pinyin-prts/releases/download/v20250523/cn_dicts.7z",
-    "hash": "5d7cd459e33143ed904fb951f85fff42891d141499e27370ca0635075bc2d73a",
+    "url": "https://github.com/WantChane/fcitx5-pinyin-prts/releases/download/v20250526/cn_dicts.7z",
+    "hash": "03afed051f63c9d5ca1a502bbe492b6efa445b414b2242a249ef2c1c1e04bd57",
     "extract_to": "dicts/cn_dicts",
     "post_install": [
         "$weaselRegPath = \"HKLM:\\SOFTWARE\\WOW6432Node\\Rime\\Weasel\"",
