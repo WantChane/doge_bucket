@@ -40,7 +40,7 @@
     "autoupdate": {
         "url": "https://github.com/WantChane/fcitx5-pinyin-prts/releases/download/v$version/cn_dicts.7z",
         "hash": {
-            "url": "https://github.com/WantChane/fcitx5-pinyin-prts/releases/download/v$version/checksums.txt",
+            "url": "https://github.com/WantChane/fcitx5-pinyin-prts/releases/download/v$version/checksum.txt",
             "regex": "$sha256\\s+./cn_dicts.7z"
         }
     }
