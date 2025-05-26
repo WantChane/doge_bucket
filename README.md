@@ -6,7 +6,7 @@
 2. 该仓库部分软件安装步骤中需要访问 Scoop 安装目录下 buckets\doge 文件夹, 因此不建议修改下面命令中的仓库名
 3. 该仓库部分软件安装步骤中会操作非 Scoop 目录, 例如 Tim 会持久化 Documents/Tencent Files
 
-```powershell
+```shell
 scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 ```
 
@@ -24,7 +24,7 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 | Name                                            | Mark                                                                                                           |
 | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | [animeko](https://github.com/open-ani/animeko/) |                                                                                                                |
-| [DanDanPlay](https://www.dandanplay.com/)       | [ZhangTianrong/scoop-bucket](https://github.com/ZhangTianrong/scoop-bucket/blob/master/bucket/dandanplay.json) |
+| [dandanplay](https://www.dandanplay.com/)       | [ZhangTianrong/scoop-bucket](https://github.com/ZhangTianrong/scoop-bucket/blob/master/bucket/dandanplay.json) |
 
 ### Browser
 
@@ -86,21 +86,24 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 #### Other
 
-| Name                                                                   | Mark |
-| ---------------------------------------------------------------------- | ---- |
-| [r2modmanPlus](https://github.com/ebkr/r2modmanPlus)                   |      |
-| [Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager) |      |
-| [HeroicGamesLauncher](https://heroicgameslauncher.com/)                |      |
+| Name                                                                   | Mark                                                                           |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| [Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager) |                                                                                |
+| [HeroicGamesLauncher](https://heroicgameslauncher.com/)                |                                                                                |
+| [ppsspp](https://www.ppsspp.org)                                       | [games](https://github.com/Calinou/scoop-games/blob/master/bucket/ppsspp.json) |
+| [r2modmanPlus](https://github.com/ebkr/r2modmanPlus)                   |                                                                                |
 
 ### Input-Method
 
 #### Weasel
 
-| Name                                                | Mark                                                                           |
-| --------------------------------------------------- | ------------------------------------------------------------------------------ |
-| [rime-ice](https://github.com/iDvel/rime-ice)       | [xrgzs/sdoog](https://github.com/xrgzs/sdoog/blob/master/bucket/rime-ice.json) |
-| [RIME-LMDG](https://github.com/amzxyz/RIME-LMDG)    |                                                                                |
-| [weaselfont](https://github.com/fxliang/weaselfont) |                                                                                |
+| Name                                                                   | Mark                                                                           |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| [fcitx 5-pinyin-prts](https://github.com/WantChane/fcitx5-pinyin-prts) |                                                                                |
+| [rime-ice](https://github.com/iDvel/rime-ice)                          | [xrgzs/sdoog](https://github.com/xrgzs/sdoog/blob/master/bucket/rime-ice.json) |
+| [rime-ice_all_dicts](https://github.com/iDvel/rime-ice)                |                                                                                |
+| [RIME-LMDG](https://github.com/amzxyz/RIME-LMDG)                       |                                                                                |
+| [weaselfont](https://github.com/fxliang/weaselfont)                    |                                                                                |
 
 ### Music
 
@@ -132,11 +135,13 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 #### Other
 
-| Name                                  | Mark                                                                                      |
-| ------------------------------------- | ----------------------------------------------------------------------------------------- |
-| [MinerU_nightly](https://mineru.net/) | 下载链接可能过时                                                                          |
-| [PicList](https://piclist.cn/)        | [hoilc/scoop-lemon](https://github.com/hoilc/scoop-lemon/blob/master/bucket/piclist.json) |
-| [texlive](https://tug.org/texlive/)   | [ehsu/dorado](https://github.com/chawyehsu/dorado/blob/master/bucket/texlive.json)        |
+| Name                                                                       | Mark                                                                                                      |
+| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| [DockerDesktop](https://www.docker.com/products/docker-desktop/)           |                                                                                                           |
+| [IDM-Activation-Script](https://github.com/lstprjct/IDM-Activation-Script) | [okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster/blob/master/bucket/idm-activation-script.json) |
+| [MinerU_nightly](https://mineru.net/)                                      | 下载链接可能过时                                                                                          |
+| [PicList](https://piclist.cn/)                                             | [hoilc/scoop-lemon](https://github.com/hoilc/scoop-lemon/blob/master/bucket/piclist.json)                 |
+| [texlive](https://tug.org/texlive/)                                        | [ehsu/dorado](https://github.com/chawyehsu/dorado/blob/master/bucket/texlive.json)                        |
 
 ### Video
 
