@@ -97,13 +97,13 @@ scoop bucket add doge https://github.com/WantChane/doge_bucket.git
 
 #### Weasel
 
-| Name                                                                   | Mark                                                                           |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| [fcitx 5-pinyin-prts](https://github.com/WantChane/fcitx5-pinyin-prts) |                                                                                |
-| [rime-ice](https://github.com/iDvel/rime-ice)                          | [xrgzs/sdoog](https://github.com/xrgzs/sdoog/blob/master/bucket/rime-ice.json) |
-| [rime-ice_all_dicts](https://github.com/iDvel/rime-ice)                |                                                                                |
-| [RIME-LMDG](https://github.com/amzxyz/RIME-LMDG)                       |                                                                                |
-| [weaselfont](https://github.com/fxliang/weaselfont)                    |                                                                                |
+| Name                                                                             | Mark                                                                           |
+| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| [fcitx5-pinyin-prts_rime_dicts](https://github.com/WantChane/fcitx5-pinyin-prts) |                                                                                |
+| [rime-ice](https://github.com/iDvel/rime-ice)                                    | [xrgzs/sdoog](https://github.com/xrgzs/sdoog/blob/master/bucket/rime-ice.json) |
+| [rime-ice_all_dicts](https://github.com/iDvel/rime-ice)                          |                                                                                |
+| [RIME-LMDG](https://github.com/amzxyz/RIME-LMDG)                                 |                                                                                |
+| [weaselfont](https://github.com/fxliang/weaselfont)                              |                                                                                |
 
 ### Music
 
