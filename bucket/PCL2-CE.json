@@ -1,16 +1,16 @@
 {
-    "version": "2.11.3",
+    "version": "2.11.4",
     "description": "PCL2 社区版，可体验上游暂未合并的功能",
     "homepage": "https://pcl-community.github.io/PCL2-CE-Web/",
     "license": "https://github.com/PCL-Community/PCL2-CE/blob/dev/LICENCE",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/2.11.3/PCL2_CE_Release_x64.exe",
-            "hash": "b6f4f4fd2bba55a62e0279aa3108f4e9ff31668e09b5e59647af68b2bfada59c"
+            "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/2.11.4/PCL2_CE_Release_x64.exe",
+            "hash": "c25fcb4911a086fe2e9c10d0c4fb7687b2f3010a06eb24331a4b447594985716"
         },
         "arm64": {
-            "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/2.11.3/PCL2_CE_Release_ARM64.exe",
-            "hash": "c96d4a58ad325cdfd564451796136119f8db3edc75e82a9a82dbecc9e8db7810"
+            "url": "https://github.com/PCL-Community/PCL2-CE/releases/download/2.11.4/PCL2_CE_Release_ARM64.exe",
+            "hash": "aebdc9c801e47cfad25c00a6537eab757409a3a866b3b3a2c266338d15f885d2"
         }
     },
     "persist": [
