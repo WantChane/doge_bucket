@@ -35,7 +35,12 @@
         "debug",
         "background"
     ],
-    "bin": "MAA.exe",
+    "bin": [
+        [
+            "MAA.exe",
+            "MAA_beta"
+        ]
+    ],
     "shortcuts": [
         [
             "MAA.exe",
