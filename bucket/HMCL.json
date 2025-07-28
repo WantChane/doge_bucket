@@ -13,12 +13,8 @@
         ]
     ],
     "pre_install": [
-        "function ensureFile([String] $name) {",
-        "    if (!(Test-Path \"$persist_dir\\$name\") -and !(Test-Path \"$dir\\$name\")) {",
-        "        Add-Content -Path \"$dir\\$name\" -Value $null",
-        "    }",
-        "}",
-        "ensureFile 'hmcl.json'"
+        ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+        "Ensure-File -Name 'hmcl.json'"
     ],
     "persist": [
         "hmcl.json",

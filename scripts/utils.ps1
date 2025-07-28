@@ -37,3 +37,28 @@ function Remove-Junction {
         }
     }
 }
+
+function Ensure-File {
+    param(
+        [Parameter(Mandatory = $true)]
+        [ValidateNotNullOrEmpty()]
+        [string]$Name,
+
+        [switch]$AsJson
+    )
+
+    $targetPath = Join-Path -Path $dir -ChildPath $Name
+    $persistPath = Join-Path -Path $persist_dir -ChildPath $Name
+
+    if (-not (Test-Path -LiteralPath $persistPath) -and
+        -not (Test-Path -LiteralPath $targetPath)) {
+        $initialContent = if ($AsJson -or $Name.EndsWith('.json')) {
+            '{}'
+        } else {
+            $null
+        }
+
+        $null = New-Item -Path $targetPath -ItemType File -Value $initialContent -Force
+
+    }
+}
