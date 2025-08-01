@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\mpv]
+@="URL:mpv"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\mpv\shell]
+
+[HKEY_CLASSES_ROOT\mpv\shell\open]
+
+[HKEY_CLASSES_ROOT\mpv\shell\open\command]
+@="\"{{ PATH_TO_MPV }}\" \"%1\""
