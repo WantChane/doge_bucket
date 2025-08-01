@@ -37,7 +37,7 @@
         "if ($result -eq 0) {",
         "   try {",
         "       info '正在执行安装脚本...'",
-        "       Start-Process -FilePath \"$mpv_installer\" -Verb RunAs -Wait -ErrorAction Stop",
+        "       Start-Process -FilePath \"$umpv_installer\" -Verb RunAs -Wait -ErrorAction Stop",
         "       info '✔ 文件关联已成功设置'",
         "   } catch {",
         "       error \"注册表设置失败: $_\"",
