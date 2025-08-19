@@ -27,6 +27,7 @@
         "UV_TOOL_BIN_DIR": "$dir\\uv\\bin"
     },
     "env_add_path": "uv\\bin",
+    "persist": "uv",
     "bin": [
         "uv.exe",
         "uvx.exe",
