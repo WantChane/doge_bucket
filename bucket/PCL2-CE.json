@@ -33,7 +33,7 @@
             "}",
             "",
             ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
-            "Ensure-Junction -Source \"$persist_dir\\.PCLCE\" -Target \"$env:APPDATA\\.PCLCE\""
+            "Set-Junction -Source \"$persist_dir\\.PCLCE\" -Target \"$env:APPDATA\\.PCLCE\""
         ]
     },
     "uninstaller": {

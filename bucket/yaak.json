@@ -14,8 +14,8 @@
     "installer": {
         "script": [
             ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
-            "Ensure-Junction -Source \"$persist_dir\\AppData\" -Target \"$env:APPDATA\\app.yaak.desktop\"",
-            "Ensure-Junction -Source \"$persist_dir\\LocalAppData\" -Target \"$env:LOCALAPPDATA\\app.yaak.desktop\""
+            "Set-Junction -Source \"$persist_dir\\AppData\" -Target \"$env:APPDATA\\app.yaak.desktop\"",
+            "Set-Junction -Source \"$persist_dir\\LocalAppData\" -Target \"$env:LOCALAPPDATA\\app.yaak.desktop\""
         ]
     },
     "uninstaller": {

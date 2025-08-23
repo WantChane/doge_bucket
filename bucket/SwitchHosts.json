@@ -23,7 +23,7 @@
             "    @{ source = \"$persist_dir\\SwitchHosts\"; target = \"$env:APPDATA\\SwitchHosts\" }",
             ")",
             "foreach ($link in $links) {",
-            "    Ensure-Junction -Source $($link.Source) -Target $($link.Target)",
+            "    Set-Junction -Source $($link.Source) -Target $($link.Target)",
             "}"
         ]
     },

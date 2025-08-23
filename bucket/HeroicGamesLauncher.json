@@ -11,7 +11,7 @@
     "installer": {
         "script": [
             ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
-            "Ensure-Junction -Source \"$persist_dir\\AppData\" -Target \"$env:APPDATA\\heroic\""
+            "Set-Junction -Source \"$persist_dir\\AppData\" -Target \"$env:APPDATA\\heroic\""
         ]
     },
     "persist": "Games",

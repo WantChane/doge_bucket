@@ -18,7 +18,7 @@
     "installer": {
         "script": [
             ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
-            "Ensure-Junction -Source \"$persist_dir\\AppData\" -Target \"$env:APPDATA\\io.github.clash-verge-rev.clash-verge-rev\""
+            "Set-Junction -Source \"$persist_dir\\AppData\" -Target \"$env:APPDATA\\io.github.clash-verge-rev.clash-verge-rev\""
         ]
     },
     "pre_uninstall": "Start-Process \"$dir\\resources\\uninstall-service.exe\" -Wait -Verb 'RunAs' -WindowStyle 'Hidden'; Start-Sleep -Seconds 3",

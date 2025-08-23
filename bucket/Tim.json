@@ -30,7 +30,7 @@
             "$personalPath = Get-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\" -Name \"Personal\" | Select-Object -ExpandProperty Personal",
             "$target = \"$personalPath\\Tencent Files\"",
             ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
-            "Ensure-Junction -Source \"$source\" -Target \"$target\""
+            "Set-Junction -Source \"$source\" -Target \"$target\""
         ]
     },
     "uninstaller": {

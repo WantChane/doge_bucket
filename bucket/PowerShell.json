@@ -43,7 +43,7 @@
         "$personalPath = Get-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\" -Name \"Personal\" | Select-Object -ExpandProperty Personal",
         ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
         "$target = \"$personalPath\\PowerShell\"",
-        "Ensure-Junction -Source \"$persist_dir\\CurrentUser\" -Target \"$personalPath\\PowerShell\""
+        "Set-Junction -Source \"$persist_dir\\CurrentUser\" -Target \"$personalPath\\PowerShell\""
     ],
     "uninstaller": {
         "script": [

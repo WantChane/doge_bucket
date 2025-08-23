@@ -22,7 +22,7 @@
     "installer": {
         "script": [
             ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
-            "Ensure-Junction -Source \"$persist_dir\\log\" -Target \"$env:APPDATA\\lx-music-desktop\""
+            "Set-Junction -Source \"$persist_dir\\log\" -Target \"$env:APPDATA\\lx-music-desktop\""
         ]
     },
     "uninstaller": {

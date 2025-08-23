@@ -1,4 +1,4 @@
-function Ensure-Junction {
+function Set-Junction {
     param(
         [Parameter(Mandatory)]
         [string]$Source,
@@ -38,7 +38,7 @@ function Remove-Junction {
     }
 }
 
-function Ensure-File {
+function Set-PersistFile {
     param(
         [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]

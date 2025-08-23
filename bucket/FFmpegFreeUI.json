@@ -22,7 +22,7 @@
     },
     "pre_install": [
         ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
-        "Ensure-File -Name 'Settings.json'"
+        "Set-PersistFile -Name 'Settings.json'"
     ],
     "persist": "Settings.json",
     "suggest": {
