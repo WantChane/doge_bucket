@@ -24,8 +24,8 @@
     ],
     "post_uninstall": [
         "if ($cmd -eq 'uninstall') {",
-        "   $result = schtasks /query /tn \"Flow.Launcher Startup\" /fo LIST 2>$null",
-        "   if ($LASTEXITCODE -ne 0) { exit }",
+        "   . \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+        "   if (!(Test-ScheduledTask \"Flow.Launcher Startup\")) { exit }",
         "   $caption = \"发现计划任务`Flow.Launcher Startup`,是否要删除?\"",
         "   $yes = New-Object System.Management.Automation.Host.ChoiceDescription '&Yes', '是'",
         "   $no = New-Object System.Management.Automation.Host.ChoiceDescription '&No', '否'",

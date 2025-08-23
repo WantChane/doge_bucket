@@ -45,8 +45,8 @@
     ],
     "post_uninstall": [
         "if ($cmd -eq 'uninstall') {",
-        "   $result = schtasks /query /tn \"AltSnap\" /fo LIST 2>$null",
-        "   if ($LASTEXITCODE -ne 0) { exit }",
+        "   . \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+        "   if (!(Test-ScheduledTask \"AltSnap\")) { exit }",
         "   $caption = \"发现计划任务AltSnap,是否要删除?\"",
         "   $message = \"该操作需要管理员权限,更多信息查看https://github.com/RamonUnch/AltSnap/wiki#setup-auto-start\"",
         "   $yes = New-Object System.Management.Automation.Host.ChoiceDescription '&Yes', '是'",

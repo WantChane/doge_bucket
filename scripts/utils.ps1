@@ -62,3 +62,16 @@ function Set-PersistFile {
 
     }
 }
+
+
+function Test-ScheduledTask {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$TaskName
+    )
+
+    schtasks /query /tn $TaskName *>$null
+
+    return $LASTEXITCODE -eq 0
+}
