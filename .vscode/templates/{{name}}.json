@@ -1,0 +1,83 @@
+{
+    "version": "",
+    "description": "",
+    "homepage": "",
+    "license": "",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": ""
+            },
+            "64bit": {
+                "url": ""
+            },
+            "arm64": {
+                "url": ""
+            }
+        },
+        "url": "https:"
+    },
+    "architecture": {
+        "32bit": {
+            "url": "https:",
+            "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        "64bit": {
+            "url": "https:",
+            "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
+        "arm64": {
+            "url": "https:",
+            "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+    },
+    "url": "https:",
+    "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "extract_dir": "",
+    "extract_to": "",
+    "pre_install": [
+        ""
+    ],
+    "installer": {
+        "file": "",
+        "args": [
+            ""
+        ],
+        "script": [
+            ""
+        ]
+    },
+    "post_install": [
+        ""
+    ],
+    "env_add_path": "",
+    "env_set": {
+        "": ""
+    },
+    "shortcuts": [
+        [
+            "",
+            ""
+        ]
+    ],
+    "persist": [
+        ""
+    ],
+    "bin": "",
+    "pre_uninstall": [
+        ""
+    ],
+    "uninstaller": {
+        "file": "",
+        "args": [
+            ""
+        ],
+        "script": [
+            ""
+        ]
+    },
+    "post_uninstall": [
+        ""
+    ]
+}
