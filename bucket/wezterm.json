@@ -24,6 +24,10 @@
     "url": "https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-windows-20240203-110809-5046fc22.zip",
     "hash": "57e5d03b585303d81e8b8e96d1230362852eb39aca92b3b29c7a42cfb82f9ac4",
     "extract_dir": "WezTerm-windows-20240203-110809-5046fc22",
+    "pre_install": [
+        ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
+        "Set-PersistFile -Name wezterm.lua -InitType Lua"
+    ],
     "post_install": [
         "$weztermPath = \"$dir\\wezterm-gui.exe\".Replace('\\', '\\\\')",
         "'install-context', 'uninstall-context' | ForEach-Object {",
@@ -33,9 +37,7 @@
         "        if ($global) { $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE') }",
         "        Set-Content \"$dir\\$_.reg\" $content -Encoding Ascii -Force",
         "    }",
-        "}",
-        ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
-        "Set-PersistFile -Name wezterm.lua -InitType Lua"
+        "}"
     ],
     "bin": [
         "wezterm.exe",
