@@ -60,7 +60,6 @@ function Set-PersistFile {
             default { $null }
         }
 
-        # 创建文件并写入初始内容
         $null = New-Item -Path $targetPath -ItemType File -Value $initialContent -Force
     }
 }
