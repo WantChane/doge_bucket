@@ -44,7 +44,8 @@ function Set-PersistFile {
         [ValidateNotNullOrEmpty()]
         [string]$Name,
 
-        [switch]$AsJson
+        [ValidateSet('Json', 'Lua')]
+        [string]$InitType
     )
 
     $targetPath = Join-Path -Path $dir -ChildPath $Name
@@ -52,14 +53,15 @@ function Set-PersistFile {
 
     if (-not (Test-Path -LiteralPath $persistPath) -and
         -not (Test-Path -LiteralPath $targetPath)) {
-        $initialContent = if ($AsJson -or $Name.EndsWith('.json')) {
-            '{}'
-        } else {
-            $null
+
+        $initialContent = switch ($InitType) {
+            'Json' { '{}' }
+            'Lua' { 'return {}' }
+            default { $null }
         }
 
+        # 创建文件并写入初始内容
         $null = New-Item -Path $targetPath -ItemType File -Value $initialContent -Force
-
     }
 }
 
