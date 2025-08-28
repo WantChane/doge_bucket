@@ -45,7 +45,8 @@
     ],
     "persist": [
         "wezterm.lua",
-        "wezterm_modules"
+        "wezterm_modules",
+        "colors"
     ],
     "shortcuts": [
         [
