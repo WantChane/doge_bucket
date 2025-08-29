@@ -38,32 +38,54 @@ function Remove-Junction {
     }
 }
 
+function Get-InitialContent {
+    param([string]$InitType)
+    switch ($InitType) {
+        'Json' { '{}' }
+        'Lua' { 'return {}' }
+        default { $null }
+    }
+}
+
 function Set-PersistFile {
     param(
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [ValidateNotNullOrEmpty()]
         [string]$Name,
 
         [ValidateSet('Json', 'Lua')]
         [string]$InitType
     )
-
-    $targetPath = Join-Path -Path $dir -ChildPath $Name
-    $persistPath = Join-Path -Path $persist_dir -ChildPath $Name
-
-    if (-not (Test-Path -LiteralPath $persistPath) -and
-        -not (Test-Path -LiteralPath $targetPath)) {
-
-        $initialContent = switch ($InitType) {
-            'Json' { '{}' }
-            'Lua' { 'return {}' }
-            default { $null }
-        }
-
-        $null = New-Item -Path $targetPath -ItemType File -Value $initialContent -Force
+    $targetPath = Join-Path $dir $Name
+    $persistPath = Join-Path $persist_dir $Name
+    if (-not (Test-Path $persistPath) -and -not (Test-Path $targetPath)) {
+        $initialContent = Get-InitialContent -InitType $InitType
+        $null = New-Item $targetPath -ItemType File -Value $initialContent -Force
     }
 }
 
+function Remove-PersistFile {
+    param(
+        [Parameter(Mandatory)]
+        [ValidateNotNullOrEmpty()]
+        [string]$Name,
+
+        [ValidateSet('Json', 'Lua')]
+        [string]$InitType,
+
+        [switch]$Force
+    )
+    $paths = $dir, $persist_dir | ForEach-Object { Join-Path $_ $Name }
+    $initialContent = Get-InitialContent -InitType $InitType
+    foreach ($path in $paths) {
+        if (-not (Test-Path $path)) { continue }
+        $shouldDelete = $Force -or (
+            $initialContent -and
+            (Get-Content $path -Raw) -eq $initialContent
+        )
+        if ($shouldDelete) { Remove-Item $path -Force }
+    }
+}
 
 function Test-ScheduledTask {
     [CmdletBinding()]
