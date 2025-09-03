@@ -1,5 +1,5 @@
 {
-    "version": "20240203-110809-5046fc22",
+    "version": "nightly-2025.09.03.034533",
     "description": "A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
     "homepage": "https://github.com/wez/wezterm",
     "license": {
@@ -11,23 +11,30 @@
         "reg import \"$dir\\install-context.reg\""
     ],
     "checkver": {
-        "github": "https://github.com/wez/wezterm",
-        "regex": "/releases/tag/([\\d-a-z]+)"
+        "url": "https://api.github.com/repos/wezterm/wezterm/releases/tags/nightly",
+        "jsonpath": "$.assets[?(@.name == 'WezTerm-windows-nightly.zip')]",
+        "regex": "(\\d+)-(\\d+)-(\\d+)T(\\d+):(\\d+):(\\d+)Z",
+        "replace": "nightly-${1}.${2}.${3}.${4}${5}${6}"
     },
     "autoupdate": {
-        "url": "https://github.com/wez/wezterm/releases/download/$version/WezTerm-windows-$version.zip",
-        "extract_dir": "WezTerm-windows-$version",
+        "url": "https://github.com/wez/wezterm/releases/download/nightly/WezTerm-windows-nightly.zip",
         "hash": {
             "url": "$url.sha256"
         }
     },
-    "url": "https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-windows-20240203-110809-5046fc22.zip",
-    "hash": "57e5d03b585303d81e8b8e96d1230362852eb39aca92b3b29c7a42cfb82f9ac4",
-    "extract_dir": "WezTerm-windows-20240203-110809-5046fc22",
+    "url": "https://github.com/wez/wezterm/releases/download/nightly/WezTerm-windows-nightly.zip",
+    "hash": "3f5674b87ba4a620f9c8800e2230e5badf222718a31017060eba929aa0639c62",
     "pre_install": [
         ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
         "Set-PersistFile -Name wezterm.lua -InitType Lua"
     ],
+    "installer": {
+        "script": [
+            "$foldername = (Get-Item $dir\\WezTerm-windows-*).Name",
+            "Move-Item $dir\\$foldername\\* $dir",
+            "Remove-Item $dir\\$foldername"
+        ]
+    },
     "post_install": [
         "$weztermPath = \"$dir\\wezterm-gui.exe\".Replace('\\', '\\\\')",
         "'install-context', 'uninstall-context' | ForEach-Object {",
@@ -40,8 +47,14 @@
         "}"
     ],
     "bin": [
-        "wezterm.exe",
-        "wezterm-gui.exe"
+        [
+            "wezterm.exe",
+            "wezterm_nightly"
+        ],
+        [
+            "wezterm-gui.exe",
+            "wezterm-gui_nighlty"
+        ]
     ],
     "persist": [
         "wezterm.lua",
@@ -51,7 +64,7 @@
     "shortcuts": [
         [
             "wezterm-gui.exe",
-            "Wezterm"
+            "Wezterm Nightly"
         ]
     ]
 }
