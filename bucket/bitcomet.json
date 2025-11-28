@@ -1,13 +1,13 @@
 {
     "##": "from okibcn/ScoopMaster",
     "homepage": "https://www.bitcomet.com/",
-    "version": "2.09",
+    "version": "2.18",
     "license": {
         "identifier": "freeware for non-commercial use",
         "url": "https://www.bitcomet.com/en/license"
     },
-    "url": "https://download.bitcomet.com/achive/BitComet_2.09.zip",
-    "hash": "d5a6d89b0da61211ee7d08ae07f9572da196030b7aeebe04f0aa7dbc285979df",
+    "url": "https://download.bitcomet.com/achive/BitComet_2.18.zip",
+    "hash": "8e447189172d7eb7a4b2649186c7a9d46ed5fcb262cec5c86b8ac784e21882a9",
     "persist": [
         "BitComet.xml",
         "Downloads.xml",
