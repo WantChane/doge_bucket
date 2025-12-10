@@ -73,17 +73,33 @@ function Remove-PersistFile {
         [ValidateSet('Json', 'Lua')]
         [string]$InitType,
 
-        [switch]$Force
+        [switch]$Force,
+        [switch]$IfEmpty
     )
     $paths = $dir, $persist_dir | ForEach-Object { Join-Path $_ $Name }
-    $initialContent = Get-InitialContent -InitType $InitType
+
+    $initialContent = if ($InitType) {
+        Get-InitialContent -InitType $InitType
+    }
+
     foreach ($path in $paths) {
         if (-not (Test-Path $path)) { continue }
-        $shouldDelete = $Force -or (
-            $initialContent -and
-            (Get-Content $path -Raw) -eq $initialContent
-        )
-        if ($shouldDelete) { Remove-Item $path -Force }
+
+        $shouldDelete = $false
+
+        if ($Force) {
+            $shouldDelete = $true
+        } elseif ($InitType) {
+            $shouldDelete = $initialContent -and
+            ((Get-Content $path -Raw) -eq $initialContent)
+        } elseif ($IfEmpty) {
+            $content = Get-Content $path -Raw
+            $shouldDelete = [string]::IsNullOrEmpty($content)
+        }
+
+        if ($shouldDelete) {
+            Remove-Item $path -Force
+        }
     }
 }
 
