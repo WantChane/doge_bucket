@@ -1,10 +1,10 @@
 {
-    "version": "2.12.1",
+    "version": "2.12.2",
     "description": "Minecraft 启动器：Plain Craft Launcher。超快的下载速度，下载安装 Mod 和整合包，简洁且高度自定义的界面，流畅精细的动画……总之很棒就完事啦！",
     "homepage": "https://github.com/Hex-Dragon/PCL2",
     "license": "https://github.com/Hex-Dragon/PCL2/blob/main/LICENCE",
     "url": "https://raw.githubusercontent.com/Hex-Dragon/PCL2/main/最新正式版.zip",
-    "hash": "109fefcea91333dc68e9cced7efebe7307f25d42de8ae9119350d13219105c0c",
+    "hash": "2bbb47a4c3d2a37b78731ec72f038c4bc7ce4e62fdb3f1302a6de593616bcd47",
     "shortcuts": [
         [
             "Plain Craft Launcher 2.exe",
