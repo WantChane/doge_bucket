@@ -2,10 +2,10 @@
     "##": "来自https://github.com/ZhangTianrong/scoop-bucket/blob/master/bucket/dandanplay.json",
     "homepage": "https://www.dandanplay.com/",
     "description": "A free to use bangumi player with danmaku support",
-    "version": "17.0.0.0",
+    "version": "17.1.0.0",
     "license": "Apache-2.0",
-    "url": "https://github.com/kaedei/dandanplay/releases/download/windows-17.0.0.0/dandanplay-x64_17.0.0.zip",
-    "hash": "d0e60537663b5847cafa359f4c486d07f1eb73dd8db812666680d1f6fc29eeaa",
+    "url": "https://github.com/kaedei/dandanplay/releases/download/windows-17.1.0.0/dandanplay-x64_17.1.0.zip",
+    "hash": "c57c7b51d917b839f8026485cf2f8b94373749ccec958c9128c3cddfd62bf55c",
     "extract_dir": "dandanplay-x64",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\Config\")) {",
