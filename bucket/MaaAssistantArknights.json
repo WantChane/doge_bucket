@@ -2,18 +2,18 @@
     "##": "基于 https://github.com/cel-ti/maa-bucket/blob/master/bucket/maa.json",
     "homepage": "https://maa.plus",
     "description": "《明日方舟》小助手，自动刷图、智能基建换班，全日常一键长草",
-    "version": "6.10.2",
+    "version": "6.10.3",
     "checkver": {
         "github": "https://github.com/MaaAssistantArknights/MaaAssistantArknights"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v6.10.2/MAA-v6.10.2-win-x64.zip",
-            "hash": "e565c4130c19380963c200944ea82320a8338c35d1fcfbe0c625547668f7b0a0"
+            "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v6.10.3/MAA-v6.10.3-win-x64.zip",
+            "hash": "99d947a8e1eff8f0e7c891fb042cc68821c95f55ac587477bb5002297e6d074a"
         },
         "arm64": {
-            "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v6.10.2/MAA-v6.10.2-win-arm64.zip",
-            "hash": "aeceb058e25b7321731ccaff3a0a1235cb1244acf3867fa6826f0412ecf2303e"
+            "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v6.10.3/MAA-v6.10.3-win-arm64.zip",
+            "hash": "98bc9b542e0be28a35e570e7fce71bb00be593642294929d6e61bef6d54219a3"
         }
     },
     "autoupdate": {
