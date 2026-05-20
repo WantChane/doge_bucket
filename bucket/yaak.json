@@ -1,10 +1,10 @@
 {
-    "version": "2026.3.1",
+    "version": "2026.4.0",
     "description": "The most intuitive desktop API client. Organize and execute REST, GraphQL, WebSockets, Server Sent Events, and gRPC 🦬 ",
     "homepage": "https://yaak.app/",
     "license": "MIT",
-    "url": "https://github.com/mountain-loop/yaak/releases/download/v2026.3.1/Yaak_2026.3.1_x64-setup.exe#/dl.7z",
-    "hash": "8549ba10e43ec9abde7d3c775bafd8f3bc53298c5c2329fd3887d2ab4b14592f",
+    "url": "https://github.com/mountain-loop/yaak/releases/download/v2026.4.0/Yaak_2026.4.0_x64-setup.exe#/dl.7z",
+    "hash": "026dc0753f4880313b93bbff848a9cd09a114f87111aaaef5e4e698c52c8b561",
     "shortcuts": [
         [
             "yaak-app.exe",
