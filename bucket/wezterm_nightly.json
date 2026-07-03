@@ -1,5 +1,5 @@
 {
-    "version": "858a9c98a93e0958bf053aee7c3fa8cca5bba9f2",
+    "version": "59d94d19f5275e36f8d5ed37d61395b5e6d938b6",
     "description": "A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
     "homepage": "https://github.com/wez/wezterm",
     "license": {
@@ -21,7 +21,7 @@
         }
     },
     "url": "https://github.com/wez/wezterm/releases/download/nightly/WezTerm-windows-nightly.zip",
-    "hash": "b74892228f47aed8ff72cc498023916509033d7025cb1c109673328ec318d38f",
+    "hash": "d31bd68440d5ec9c134342a2943cdcddb792570563e16d0fe514b5859d64e71d",
     "pre_install": [
         ". \"$bucketsdir\\doge\\scripts\\utils.ps1\"",
         "Set-PersistFile -Name wezterm.lua -InitType Lua"
