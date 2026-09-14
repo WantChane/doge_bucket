@@ -1,0 +1,41 @@
+{
+    "version": "5.6.3",
+    "description": "",
+    "homepage": "https://lertaro.github.io",
+    "license": "MIT",
+    "checkver": {
+        "github": "https://github.com/Lertaro/Lertaro"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.6.3/Lertaro-Portable.zip",
+            "hash": "b99942fd050edbaa06b4b5449d2cffab0e1f6d5edc11190fb15bda4021c7cd4c"
+        },
+        "arm64": {
+            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.6.3/Lertaro-Portable-arm64.zip",
+            "hash": "251f12be02b8e174d658437bb3855be8fc199f4f93258700fe2433a356ec98ed"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Lertaro/Lertaro/releases/download/v$version/Lertaro-Portable.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.6.3/Lertaro-Portable-arm64.zip"
+            }
+        }
+    },
+    "extract_dir": "Lertaro",
+    "shortcuts": [
+        [
+            "Lertaro.App.exe",
+            "Lertaro"
+        ]
+    ],
+    "persist": "Data",
+    "bin": "lff.exe",
+    "uninstaller": {
+        "file": "portable-cleanup.bat"
+    }
+}
