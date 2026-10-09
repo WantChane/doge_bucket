@@ -1,5 +1,5 @@
 {
-    "version": "5.2.1",
+    "version": "5.2.2",
     "description": "Blockbench - A low poly 3D model editor",
     "homepage": "https://github.com/JannisX11/blockbench",
     "license": "GPL-3.0-only",
@@ -7,8 +7,8 @@
     "autoupdate": {
         "url": "https://github.com/JannisX11/blockbench/releases/download/v$version/Blockbench_$version_portable.exe#/Blockbench.exe"
     },
-    "url": "https://github.com/JannisX11/blockbench/releases/download/v5.2.1/Blockbench_5.2.1_portable.exe#/Blockbench.exe",
-    "hash": "0ed7f2465570431b999adc4e4626a21d573d6347aebd2ba7e506d3093602f60f",
+    "url": "https://github.com/JannisX11/blockbench/releases/download/v5.2.2/Blockbench_5.2.2_portable.exe#/Blockbench.exe",
+    "hash": "2c29819ac9ad2f0abcfda2ba6eed8a75afcb1ead58412b6f6152d2eb9e81e827",
     "shortcuts": [
         [
             "Blockbench.exe",
