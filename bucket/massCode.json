@@ -1,5 +1,5 @@
 {
-    "version": "6.2.1",
+    "version": "6.3.1",
     "description": "A free, open-source developer workspace. Snippets, notes, HTTP requests, calculations, and dev tools in one local-first app.",
     "homepage": "https://github.com/massCodeIO/massCode",
     "license": "AGPL-3.0",
@@ -13,8 +13,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/massCodeIO/massCode/releases/download/v6.2.1/massCode-6.2.1-x64-portable.exe",
-            "hash": "fdfadd79f7252459f742b2e1fd9e647a8fad5bb263c6bf0683a990303ce41512"
+            "url": "https://github.com/massCodeIO/massCode/releases/download/v6.3.1/massCode-6.3.1-x64-portable.exe",
+            "hash": "c0439518f6121638e7571f63224c31870d6551ab8d1b562ddd1667e8c3261337"
         }
     },
     "shortcuts": [
