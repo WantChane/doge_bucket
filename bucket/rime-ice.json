@@ -1,11 +1,11 @@
 {
     "##": "基于https://github.com/xrgzs/sdoog/blob/master/bucket/rime-ice.json",
-    "version": "2026.10.31.120159",
+    "version": "2026.11.11.105142",
     "homepage": "https://github.com/iDvel/rime-ice",
     "description": "Rime 配置：雾凇拼音 | 长期维护的简体词库",
     "license": "GPL-3.0-only",
     "url": "https://github.com/iDvel/rime-ice/releases/download/nightly/full.zip",
-    "hash": "72b83b88443a19b4f1f1b2190a01ac2578823d4f64ccd98f0ac9f76b8d29f055",
+    "hash": "94fb6c1919ea92e086b89720619ea3ec4a349f3c5c980bfe6f86a31514e9886d",
     "extract_to": "rime-ice",
     "post_install": [
         "$weaselRegPath = \"HKLM:\\SOFTWARE\\WOW6432Node\\Rime\\Weasel\"",
