@@ -1,5 +1,5 @@
 {
-    "version": "5.13.4",
+    "version": "5.13.5",
     "description": "",
     "homepage": "https://lertaro.github.io",
     "license": "MIT",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.13.4/Lertaro-Portable.zip",
-            "hash": "3b5aa094492cdb1842bfdb956ba030e6691783d24f12f7d2c69fb5b05841d7b4"
+            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.13.5/Lertaro-Portable.zip",
+            "hash": "f3f392c5081c31883e1f92cb1ed40cb9de9ae7c18f2f6c2b23b1ad17f1f2812d"
         },
         "arm64": {
             "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.6.3/Lertaro-Portable-arm64.zip",
