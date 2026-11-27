@@ -1,5 +1,5 @@
 {
-    "version": "1.3.44",
+    "version": "1.3.45",
     "description": "A modern, cross-platform, and free AI RSS reader. 一个现代化、跨平台且免费的 AI RSS 阅读器.",
     "homepage": "https://mrrss.ch3nyang.top/",
     "license": "GPL-3.0-only",
@@ -9,8 +9,8 @@
     "autoupdate": {
         "url": "https://github.com/WCY-dt/MrRSS/releases/download/v$version/MrRSS-$version-windows-amd64-portable.zip"
     },
-    "url": "https://github.com/WCY-dt/MrRSS/releases/download/v1.3.44/MrRSS-1.3.44-windows-amd64-portable.zip",
-    "hash": "f9ee85bc58158e157188223cb41cdcea703a922acf013de3281cffd9e5c39197",
+    "url": "https://github.com/WCY-dt/MrRSS/releases/download/v1.3.45/MrRSS-1.3.45-windows-amd64-portable.zip",
+    "hash": "28cf73e62d45b1a3fb3da8f9b4e3cc9a87048a406f48b29eecce6b6358c026b8",
     "shortcuts": [
         [
             "MrRSS.exe",
